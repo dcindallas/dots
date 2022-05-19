@@ -1,0 +1,231 @@
+
+# i3 config file (v4)
+set $mod Mod4
+set $alt Mod1
+
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango: DejaVu Mono Book 11;3"
+
+for_window [class= Xfce4-power-manager-settings|System-config-printer|MEGAsync|GravitDesigner|Headset|gnome-calculator|Xfce4-panel|Msgcompose|aranMsgcompose|zoom|Oomox|Pavucontrol|Blueman-manager|Gcolor3|TelegramDesktop|Lxappearance|arandr|Spotify|feh|Zoom|File-roller|Gpick|Pithos] floating enable
+
+# set the outside border gaps needs it I make them disappear with picom anywayway
+for_window [class="^.*"] border pixel 2
+
+# statup programs
+exec --no-startup-id dex --autostart --environment i3
+# launch the bar
+
+# load my workspace on startup the way I like it
+exec --no-startup-id i3-msg 'workspace 1; exec google-chrome-beta; workspace 1'
+exec --no-startup-id i3-msg 'workspace 2; exec nautilus; workspace 1'
+exec --no-startup-id i3-msg 'workspace 2; exec geany; workspace 1'
+exec --no-startup-id i3-msg 'workspace 2; exec kitty; workspace 1'
+exec --no-startup-id i3-msg 'workspace 3; exec thunderbird; workspace 1'
+exec --no-startup-id i3-msg 'workspace 4; exec kitty; workspace 1 floating floating_maximum_size 600 x 500'
+exec --no-startup-id i3-msg 'workspace 5; exec gimp; workspace 1'
+# exit reload restart or lock
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+w reload
+bindsym $mod+shift+e exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+# bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $mod+Escape exec betterlockscreen -l dim
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+# set the gaps and adjust them when you want
+gaps inner 20
+gaps outer 10
+gaps top 50
+
+bindsym $mod+z		gaps outer current plus 5
+bindsym $mod+Shift+z	gaps outer current minus 5
+
+bindsym $mod+Return exec kitty
+bindsym $alt+q exec tilix --quake
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=10'"
+
+# rofi the best app menu eva
+bindsym $mod+a exec rofi -show drun
+
+# common apps keybinds screenshot etc
+bindsym Print exec xfce4-screenshooter
+bindsym $alt+c exec gcolor3
+bindsym $alt+w exec google-chrome-beta
+bindsym $alt+f exec nautilus
+bindsym $alt+g exec geany
+bindsym $alt+s exec spotify
+bindsym $alt+p exec pithos
+bindsym $alt+t exec thunderbird
+
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout split
+bindsym $mod+s layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+Shift+space focus mode_toggle
+
+# switch to workspace
+bindsym $alt+control+Right workspace next
+bindsym $alt+control+Left workspace prev
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+
+# open apps on start
+#~exec google-chrome-beta;workspace 1;focus
+#~exec thunderbird;workspace 3
+#~exec geany;workspace 2
+#~exec nautilus;workspace 2
+#~exec kitty;workspace 2
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+        bindsym Return mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Use pactl to adjust volume in PulseAudio.
+
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# color from theme pulled from xresources
+set_from_resource $fg   i3wm.foreground #foreground
+set_from_resource $bg   i3wm.background #background
+set_from_resource $c0   i3wm.color0     # background
+set_from_resource $c1   i3wm.color1     # dark background
+set_from_resource $c2   i3wm.color2     # green color
+set_from_resource $c3   i3wm.color3     # gold
+set_from_resource $c4   i3wm.color4     # light-blue
+set_from_resource $c5   i3wm.color5     # light-purple
+set_from_resource $c6   i3wm.color6     # teal
+set_from_resource $c7   i3wm.color7     # foreground - off-white
+set_from_resource $c8   i3wm.color8     # gray
+set_from_resource $c9   i3wm.color9     # sat-red
+set_from_resource $c10  i3wm.color10    # sat-yellow-green
+set_from_resource $c11  i3wm.color11    # sat-green
+set_from_resource $c12  i3wm.color12    # green
+set_from_resource $c13  i3wm.color13    # sat-blue
+set_from_resource $c14  i3wm.color14    # sat-purple
+set_from_resource $c15  i3wm.color15    # sat
+set_from_resource $c16  i3wm.color16    # sat
+set_from_resource $c17  i3wm.color17    # sat
+set_from_resource $c18  i3wm.color18    # sat
+set_from_resource $c19  i3wm.color19    # sat
+set_from_resource $c20  i3wm.color20    # sat
+set_from_resource $c21  i3wm.color21    # sat
+
+# set the colors for windows    border          background      text            indicator       child
+client.focused                  $bg             $bg             $fg             $c13            $c21
+client.focused_inactive         $bg             $bg             $fg             $bg            $bg
+client.unfocused                $bg             $bg             $fg             $bg            $bg
+client.urgent                   $bg             $bg             $fg             $bg            $bg
+client.placeholder              $bg             $bg             $fg             $bg            $bg
+client.background               $bg
+
+# Make the currently focused window a scratchpad
+bindsym F2 move scratchpad
+
+# Show the first scratchpad window
+bindsym F1 scratchpad show
+
+# start the compositor (transparency, fade, shadows, blur, etc.)
+exec --no-startup-id picom -b
+
+# wallpaper one is all gradient fey for the other
+# --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
+exec --no-startup-id feh --bg-fill '/home/duane/Pictures/wallpaper/212.jpg'
+
+# start xsettings or try to here
+exec --no-startup-id xsettingsd &
+
+# set colors from xresources
+exec --no-startup-id xrdb ~/.Xresources &
+
+# start lxsession so I get themed
+exec --no-startup-id lxsession &
+
+# start the network tray application
+exec --no-startup-id nm-applet
+
+# start the volume tray application
+exec --no-startup-id volumeicon
+
+# start xfce power manager
+exec --no-startup-id power-manager &
+
+# kde make this work
+exec --no-startup-id indicator-kdeconnect &
+
+# numlock on
+exec --no-startup-id numlockx &
+
+# auto tiling because its cool
+exec --no-startup-id autotiling &
+
+# launch the bar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
