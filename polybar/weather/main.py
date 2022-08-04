@@ -5,7 +5,7 @@ from util import get_city
 
 # Get your API KEY here https://openweathermap.org/api,
 # and set an environment variable for OPENWEATHER_API_KEY with your API KEY.
-OPENWEATHER_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxx"
+OPENWEATHER_API_KEY = "d9b47f3f48563b443d5c4504f09b9071"
 API_KEY = os.environ.get("OPENWEATHER_API_KEY", OPENWEATHER_API_KEY)
 
 

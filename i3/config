@@ -1,49 +1,72 @@
-
 # i3 config file (v4)
 set $mod Mod4
 set $alt Mod1
 
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango: DejaVu Mono Book 11;3"
+font pango: DejaVu Sans Mono Book 10;3"
 
-for_window [class= Xfce4-power-manager-settings|System-config-printer|MEGAsync|GravitDesigner|Headset|gnome-calculator|Xfce4-panel|Msgcompose|aranMsgcompose|zoom|Oomox|Pavucontrol|Blueman-manager|Gcolor3|TelegramDesktop|Lxappearance|arandr|Spotify|feh|Zoom|File-roller|Gpick|Pithos] floating enable
+for_window [class=kdeconnect.app|discord|Xfce4-power-manager-settings|Arandr|System-config-printer|mediawriter|spot] floating enable
+for_window [class=GravitDesigner|Headset|Kitty|gnome-calculator|Xfce4-panel|Msgcompose|aranMsgcompose|zoom] floating enable
+for_window [class=Pavucontrol|Blueman-manager|Gcolor3|TelegramDesktop|Lxappearance|Spotify|arandr|feh] floating enable
+for_window [class=sunamu|Zoom|File-roller|Gpick|Evince|Transmission-gtk|Pithos|Nm-connection-editor|vlc] floating enable
 
-# set the outside border gaps needs it I make them disappear with picom anywayway
-for_window [class="^.*"] border pixel 2
+for_window [instance="Msgcompose" class="thunderbird-nightly"] floating enable, resize set 1000px 750px
+
+# special shit for spotify it figures
+#~for_window [class="Spotify"] move container to workspace $ws5
+
+# You can also use any non-zero value if you'd like to have a border
+for_window [class=".*"] border pixel 2
+
+# Activate smart borders (always)
+smart_borders on
+
 
 # statup programs
 exec --no-startup-id dex --autostart --environment i3
-# launch the bar
 
-# load my workspace on startup the way I like it
-exec --no-startup-id i3-msg 'workspace 1; exec google-chrome-beta; workspace 1'
-exec --no-startup-id i3-msg 'workspace 2; exec nautilus; workspace 1'
-exec --no-startup-id i3-msg 'workspace 2; exec geany; workspace 1'
-exec --no-startup-id i3-msg 'workspace 2; exec kitty; workspace 1'
-exec --no-startup-id i3-msg 'workspace 3; exec thunderbird; workspace 1'
-exec --no-startup-id i3-msg 'workspace 4; exec kitty; workspace 1 floating floating_maximum_size 600 x 500'
-exec --no-startup-id i3-msg 'workspace 5; exec gimp; workspace 1'
+# shitty screen resolution issues
+#~exec ~/.screenlayout/screen.sh
+
+
+
+for_window [title="Copying"] floating enable
+for_window [title="Deleting"] floating enable
+for_window [title="Moving"] floating enable
+for_window [title="^Terminator Preferences$"] floating enable
+
+
+#for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="^Preferences$"] floating enable
+for_window [window_role="setup"] floating enable
+
+
 # exit reload restart or lock
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+shift+e exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+
 # bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym $mod+Escape exec betterlockscreen -l dim
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
 # set the gaps and adjust them when you want
-gaps inner 20
-gaps outer 10
-gaps top 50
+gaps inner 10
+gaps outer 5
+gaps top 40
 
 bindsym $mod+z		gaps outer current plus 5
 bindsym $mod+Shift+z	gaps outer current minus 5
 
-bindsym $mod+Return exec kitty
-bindsym $alt+q exec tilix --quake
+bindsym $mod+Return exec tilix
+bindsym F1 exec kitty --class=floating_term
+for_window [class="floating_term"] floating enable
+for_window [class="floating_term"] border pixel 2
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=10'"
+bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -b -fn 'DejaVu Sans Book:size=10'"
 
 # rofi the best app menu eva
 bindsym $mod+a exec rofi -show drun
@@ -56,7 +79,7 @@ bindsym $alt+f exec nautilus
 bindsym $alt+g exec geany
 bindsym $alt+s exec spotify
 bindsym $alt+p exec pithos
-bindsym $alt+t exec thunderbird
+bindsym $alt+t exec thunderbird-nightly
 
 # kill focused window
 bindsym $mod+q kill
@@ -88,12 +111,18 @@ bindsym $mod+s layout toggle split
 # toggle tiling / floating
 bindsym $mod+space floating toggle
 
+# Make the currently focused window a scratchpad
+bindsym F2 move scratchpad
+
+# Show the first scratchpad window
+bindsym F3 scratchpad show
+
 # change focus between tiling / floating windows
 bindsym $mod+Shift+space focus mode_toggle
 
 # switch to workspace
-bindsym $alt+control+Right workspace next
-bindsym $alt+control+Left workspace prev
+bindsym control+Right workspace next
+bindsym control+Left workspace prev
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -106,6 +135,15 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 
+#~# define what monitor workspace goes to
+#~workspace 1 output eDP1
+#~workspace 2 output DP1
+#~workspace 3 output DP1
+#~workspace 4 output DP1
+#~workspace 5 output DP1
+#~workspace 6 output DP1
+#~workspace 7 output DP1
+#~workspace 8 output DP1
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -127,13 +165,6 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 
-# open apps on start
-#~exec google-chrome-beta;workspace 1;focus
-#~exec thunderbird;workspace 3
-#~exec geany;workspace 2
-#~exec nautilus;workspace 2
-#~exec kitty;workspace 2
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         bindsym Left resize shrink width 5 px or 5 ppt
@@ -146,12 +177,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Use pactl to adjust volume in PulseAudio.
-
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+## music control
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioStop exec --no-startup-id playerctl stop
 
 # color from theme pulled from xresources
 set_from_resource $fg   i3wm.foreground #foreground
@@ -173,32 +209,22 @@ set_from_resource $c13  i3wm.color13    # sat-blue
 set_from_resource $c14  i3wm.color14    # sat-purple
 set_from_resource $c15  i3wm.color15    # sat
 set_from_resource $c16  i3wm.color16    # sat
-set_from_resource $c17  i3wm.color17    # sat
-set_from_resource $c18  i3wm.color18    # sat
-set_from_resource $c19  i3wm.color19    # sat
-set_from_resource $c20  i3wm.color20    # sat
-set_from_resource $c21  i3wm.color21    # sat
+
 
 # set the colors for windows    border          background      text            indicator       child
-client.focused                  $bg             $bg             $fg             $c13            $c21
+client.focused                  $c3             $bg             $fg             $c3            $bg
 client.focused_inactive         $bg             $bg             $fg             $bg            $bg
 client.unfocused                $bg             $bg             $fg             $bg            $bg
 client.urgent                   $bg             $bg             $fg             $bg            $bg
 client.placeholder              $bg             $bg             $fg             $bg            $bg
-client.background               $bg
-
-# Make the currently focused window a scratchpad
-bindsym F2 move scratchpad
-
-# Show the first scratchpad window
-bindsym F1 scratchpad show
+client.background               $c3
 
 # start the compositor (transparency, fade, shadows, blur, etc.)
 exec --no-startup-id picom -b
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec --no-startup-id feh --bg-fill '/home/duane/Pictures/wallpaper/212.jpg'
+exec_always --no-startup-id feh --bg-fill '/home/duane/Pictures/wallpaper/13-wall.jpg'
 
 # start xsettings or try to here
 exec --no-startup-id xsettingsd &
@@ -206,20 +232,15 @@ exec --no-startup-id xsettingsd &
 # set colors from xresources
 exec --no-startup-id xrdb ~/.Xresources &
 
-# start lxsession so I get themed
-exec --no-startup-id lxsession &
-
 # start the network tray application
 exec --no-startup-id nm-applet
-
-# start the volume tray application
-exec --no-startup-id volumeicon
 
 # start xfce power manager
 exec --no-startup-id power-manager &
 
 # kde make this work
-exec --no-startup-id indicator-kdeconnect &
+exec --no-startup-id kdeconnect-indicator &
+
 
 # numlock on
 exec --no-startup-id numlockx &
@@ -229,3 +250,6 @@ exec --no-startup-id autotiling &
 
 # launch the bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# exec --no-startup-id powerkit &
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 "betterlockscreen -l dim" "" &
