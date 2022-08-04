@@ -1,20 +1,9 @@
 # dots
-some dot files
+My current dot files
 
-i3 window manager, for now it works great and I love the workflow. Install it.
+i3-gaps window manager, for now it works great and I love the workflow. Install it. https://github.com/Airblader/i3
 
-copy .config
+Colors thanks to flavours https://github.com/misterio77/flavours
 
-copy .themes to well ~/.themes chooze your theme mine is paradise, dark and clean
+Highly reccomend using Flatcolor GTK https://github.com/base16-project/base16-gtk-flatcolor
 
-read shit on the internet
-
-rice (I dont even know what that means)
-
-cava go to this site create your gradient and stick it in the config file.
-
-https://colordesigner.io/gradient-generator
-
-love
-peace
-out
