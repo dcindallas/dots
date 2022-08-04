@@ -1,0 +1,75 @@
+
+
+# # Through which shell command hooks will run. The command will be replaced in '{}'
+shell = "sh -c '{}'"
+#
+# [[items]]
+# # File to inject to, supports tilde and env var expansion. required
+file = "~/.config/i3/config"
+# # Template to use. required
+template = "i3"
+#
+# # Subtemplate to use
+# subtemplate = "default"
+# # If not rewriting, on which line (usually a comment) to start replacing
+start = "# Start flavours"
+# # If not rewriting, on which line (usually a comment) to stop replacing
+end = "# End flavours"
+# # Should we rewrite the entire file, instead of using the above delimiters?
+rewrite = false
+# # Command to execute after injecting (goes through shell)
+# hook = "i3 reload"
+# # Whether this hook should be executed when flavours is ran with lightweight flag
+light = false
+
+[[item]]
+file = "~/.themes/FlatColor/colors3"
+template = "gtk-flatcolor"
+subtemplate = "gtk-3"
+rewrite = true
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme FlatColor"
+
+[[item]]
+file = "~/.themes/FlatColor/colors2"
+template = "gtk-flatcolor"
+subtemplate = "gtk-2"
+rewrite = true
+
+[[item]]
+file = "~/.config/alacritty/alacritty.yml"
+template = "alacritty"
+subtemplate = "default-256"
+
+[[item]]
+file = "~/.config/kitty/kitty.conf"
+template = "kitty"
+subtemplate = "default-256"
+
+[[item]]
+file = "~/.Xresources"
+template = "xresources"
+rewrite = false
+hook = "xrdb ~/.Xresources"
+start= "! Start flavours"
+end = "! End flavours"
+
+
+
+# [[items]]
+# file = "~/.config/sway/config"
+# template = "sway"
+# subtemplate = "colors"
+# hook = "swaymsg reload"
+# light = false
+#
+# [[items]]
+# file = "~/.config/waybar/colors.css"
+# template = "waybar"
+# rewrite = true
+#
+# [[items]]
+# file = "~/.config/beautifuldiscord/style.css"
+# template = "styles"
+# subtemplate = "css-variables"
+# start= "/* Start flavours */"
+# end = "/* End flavours */"
