@@ -14,7 +14,7 @@ def unit_suffix(unit: str) -> str:
         case "metric":
             unit = "ºC"
         case "imperial":
-            unit = "F"
+            unit = ""
         case _:
             unit = " K"
 

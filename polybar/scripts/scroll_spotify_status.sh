@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # see man zscroll for documentation of the following parameters
-zscroll -l 35 \
+zscroll -l 33 \
         --delay 0.1 \
         --scroll-padding " " \
         --match-command "`dirname $0`/get_spotify_status.sh --status" \
