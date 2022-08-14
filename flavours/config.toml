@@ -53,6 +53,12 @@ hook = "xrdb ~/.Xresources"
 start= "! Start flavours"
 end = "! End flavours"
 
+[[item]]
+file = "~/.config/i3/config"
+template = "i3"
+rewrite = false
+hook = "i3 reload"
+
 
 
 # [[items]]
