@@ -1,9 +1,11 @@
-# i3 config file (v4)
+# i3 config file (v4)  ---------------------------------------------
+#                                                                  -
+#-------------------------------------------------------------------
+# Set the mod key one key to own this shit
 set $mod Mod4
 set $alt Mod1
-
 # Set the font
-font pango: DejaVu Sans Mono Book 10;3"
+font pango: DejaVu Sans Mono Book 10.5;3"
 
 # SPECIAL WINDOW ACTIONS -------------------------------------------
 #                                                                  -
@@ -50,8 +52,7 @@ for_window [window_role="setup"] floating enable
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 0
 # Activate smart borders (always)
-#~smart_borders on
-
+smart_borders on
 
 # START UP PROGRAMS ------------------------------------------------
 #                                                                  -
@@ -93,6 +94,9 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # exec --no-startup-id powerkit &
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 120 simplelock &
+#~# load email
+#~exec --no-startup-id thunderbird;workspace 3
+#~for_window [class="thunderbird"] move container to workspace $ws3
 
 # KEYBINDINGS -------------------------------------------------------
 #                                                                   -
@@ -258,16 +262,13 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioStop exec --no-startup-id playerctl stop
 
-
 #~bar {
 #~status_command i3status
 #~}
 
-#~# load email
-#~exec --no-startup-id thunderbird;workspace 3
-#~for_window [class="thunderbird"] move container to workspace $ws3
-
-
+# Get colors from Flavours ------------------------------------------
+#                                                                   -
+#--------------------------------------------------------------------
 
 # Start flavours
 ## Base16 Darktooth
