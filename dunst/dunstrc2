@@ -1,0 +1,96 @@
+[global]
+
+### Display ###
+monitor = 0
+follow = mouse
+shrink = no
+# Padding between text and separator.
+padding = 20
+# Horizontal padding.
+horizontal_padding = 20
+
+### Geometry ###
+width = 440
+height = 140
+offset = 50x80
+# Show how many messages are currently hidden (because of notification_limit).
+indicate_hidden = yes
+# The transparency of the window.  Range: [0; 100].
+# This option will only work if a compositing window manager is
+# present (e.g. xcompmgr, compiz, etc.). (X11 only)
+transparency = 0
+# Draw a line of "separator_height" pixel height between two
+# notifications.
+# Set to 0 to disable.
+# If gap_size is greater than 0, this setting will be ignored.
+separator_height = 2
+# Padding between text and icon.
+text_icon_padding = 8
+
+# Defines width in pixels of frame around the notification window.
+# Set to 0 to disable.
+frame_width = 1
+
+# Size of gap to display between notifications - requires a compositor.
+# If value is greater than 0, separator_height will be ignored and a border
+# of size frame_width will be drawn around each notification instead.
+# Click events on gaps do not currently propagate to applications below.
+gap_size = 12
+
+# Define a color for the separator.
+# possible values are:
+#  * auto: dunst tries to find a color fitting to the background;
+#  * foreground: use the same color as the foreground;
+#  * frame: use the same color as the frame;
+#  * anything else will be interpreted as a X color.
+frame_color = "#43a5d5"
+separator_color = "#1D2021"
+# Sort messages by urgency.
+sort = yes
+
+
+sort = no
+font = Monospace 10
+markup = full
+format = "<b>%s</b>\n%b"
+alignment = left
+show_age_threshold = 60
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = true
+hide_duplicate_count = no
+show_indicators = no
+
+icon_position = left
+max_icon_size= 30
+sticky_history = no
+history_length = 6
+title = Dunst
+class = Dunst
+corner_radius = 1
+
+mouse_left_click = close_current
+mouse_middle_click = do_action
+mouse_right_click = close_all
+
+# Defines color of the frame around the notification window.
+
+
+[urgency_low]
+background = "#1D2021"
+foreground = "#D5C4A1"
+frame_color = "#A89984"
+timeout = 10
+
+[urgency_normal]
+background = "#1D2021"
+foreground = "#D5C4A1"
+frame_color = "#A89984"
+timeout = 10
+
+
+[urgency_critical]
+background = "#1D2021"
+foreground = "#D5C4A1"
+frame_color = "#FB543F"
+timeout = 20

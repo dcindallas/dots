@@ -16,4 +16,4 @@ polybar -q center -c "$DIR"/config.ini &
 polybar -q left -c "$DIR"/config.ini &
 polybar -q right -c "$DIR"/config.ini &
 polybar -q music -c "$DIR"/config.ini &
-polybar -q news -c "$DIR"/config.ini &
+# polybar -q news -c "$DIR"/config.ini &

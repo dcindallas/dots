@@ -27,7 +27,7 @@ file = "~/.themes/FlatColor/colors3"
 template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
-hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme FlatColor"
+hook = "gsettings set org.gnome.desktop.interface gtk-theme FlatColor && gsettings set org.gnome.desktop.interface gtk-theme dummy"
 
 [[item]]
 file = "~/.themes/FlatColor/colors2"
@@ -48,20 +48,30 @@ subtemplate = "default-256"
 [[item]]
 file = "~/.Xresources"
 template = "xresources"
-rewrite = false
-hook = "xrdb ~/.Xresources"
+hook = "xrdb load ~/.Xresources"
 start= "! Start flavours"
 end = "! End flavours"
 
+[[items]]
+file = "~/.config/i3/i3-status-rust/config.toml"
+template = "i3status-rust"
+subtemplate = "default"
+hook = "i3 reload"
+#light = false
+
+[[item]]
+file = "~/.config/dunst/dunstrc"
+template = "dunst"
+subtemplate = "default"
+hook = "killall -q dunst && dunst &"
+
+[[items]]
+file = "~/.config/i3/config"
+template = "i3"
+subtemplate = "default"
+hook = "i3 reload"
 
 
-# [[items]]
-# file = "~/.config/sway/config"
-# template = "sway"
-# subtemplate = "colors"
-# hook = "swaymsg reload"
-# light = false
-#
 # [[items]]
 # file = "~/.config/waybar/colors.css"
 # template = "waybar"

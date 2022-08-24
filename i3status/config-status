@@ -1,0 +1,40 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+general {
+        colors = false
+        interval = 5
+        markup = pango
+}
+
+order += "wireless wlo1"
+order += "disk /"
+order += "load"
+order += "memory"
+order += "tztime local"
+
+wireless wlo1 {
+        format_up = "<span background='#1D2021'>   %essid </span>"
+        format_down = "<span background='#FB543F'>  Disconnected </span>"
+}
+
+disk "/" {
+        format = "  %avail "
+}
+
+load {
+        format = " 勞 %5min"
+}
+
+memory {
+        format = " 閭 %available"
+        
+}
+
+tztime local {
+        format = "  %Y-%m-%d  %H:%M:%S %Z"
+}
+
+
+
+#	 ﳌ 	ﱝ					閭	勞

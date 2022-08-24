@@ -1,0 +1,96 @@
+
+# Start flavours
+# vi:syntax=toml
+
+# base16-i3status-rust (https://github.com/mystfox/base16-i3status-rust)
+# Seti UI by 
+
+[theme]
+theme = "solarized-dark"
+[theme.overrides]
+idle_bg = "#151718"
+idle_fg = "#d6d6d6"
+info_bg = "#55dbbe"
+info_fg = "#151718"
+good_bg = "#151718"
+good_fg = "#151718"
+warning_bg = "#e6cd69"
+warning_fg = "#151718"
+critical_bg = "#Cd3f45"
+critical_fg = "#151718"
+# The rest of the theme settings are left at default.
+# End flavours
+
+[icons]
+icons = "awesome"
+[icons.overrides]
+bat = " | | "
+bat_full = " |X| "
+bat_charging = " |^| "
+bat_discharging = " |v| "
+
+
+[[block]]
+block = "kdeconnect"
+
+
+[[block]]
+block = "music"
+
+
+[[block]]
+block = "net"
+device = "wlo1"
+# format = "{ssid} {signal_strength} {ip} {speed_down;K*b} {graph_down:8;M*_b#50}"
+interval = 5
+[block.theme_overrides]
+idle_bg = "#9fca56"
+idle_fg = "#151718"
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "available"
+
+
+
+[[block]]
+block = "cpu"
+[block.theme_overrides]
+idle_bg = "#db7b55"
+idle_fg = "#151718"
+
+[[block]]
+block = "memory"
+#format_mem = "mem_used_percents.eng(1)"
+clickable = false
+interval = 30
+warning_mem = 70
+critical_mem = 90
+
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+[block.theme_overrides]
+idle_bg = "#a074c4"
+idle_fg = "#151718"
+
+[[block]]
+block = "weather"
+service = { name = "openweathermap", api_key = "d9b47f3f48563b443d5c4504f09b9071", city_id = "4719457", units = "imperial" }
+
+[[block]]
+block = "time"
+interval = 5
+[block.icons_overrides]
+time = ""
+format = "%a %D  %I:%M %p"
+[[block.click]]
+button = "left"
+cmd = "rofi -show power-menu -theme /home/duane/.config/rofi/power-menu.rasi -modi power-menu:rofi-power-menu -width: 300"
+[block.theme_overrides]
+idle_bg = "#e6cd69"
+idle_fg = "#151718"
