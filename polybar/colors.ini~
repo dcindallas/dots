@@ -1,0 +1,23 @@
+;; _-_-_-_-_-_-_- Color File For Polybar From xresouces _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[color]
+background = #000000dd
+foreground = ${xrdb:foreground}
+bg2 = ${xrdb:color10}
+gray0 = ${xrdb:color11}
+gray1 = ${xrdb:color8}
+gray2 = ${xrdb:color12}
+fg2 = ${xrdb:color13}
+white = ${xrdb:color15}
+red = ${xrdb:color1}
+orange = ${xrdb:color9}
+yellow = ${xrdb:color3}
+green = ${xrdb:color2}
+teal = ${xrdb:color6}
+blue = ${xrdb:color4}
+purple = ${xrdb:color5}
+brown = ${xrdb:color14}
+trans = #000000dd
+
+
+

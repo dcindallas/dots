@@ -1,0 +1,153 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+#: Fonts {{{
+
+#: kitty has very powerful font management. You can configure
+#: individual font faces and even specify special fonts for particular
+#: characters.
+font_family      Courier Prime Regular
+bold_font        Courier Prime Bold
+italic_font      Courier Prime Italic
+bold_italic_font Courier Prime Bold Italic
+font_size 11
+force_ltr no
+adjust_line_height  0
+adjust_column_width 0
+adjust_baseline 0
+font_features none
+GLFW_AUTO_ICONIFY = false
+cursor_shape beam
+cursor_beam_thickness 1.5
+cursor_blink_interval 3
+cursor_stop_blinking_after 60.0
+scrollback_lines 12000
+wheel_scroll_multiplier 3.0
+wheel_scroll_min_lines 1
+mouse_hide_wait -1.0
+focus_follows_mouse no
+url_color #fe8019
+url_style dotted
+open_url_with default
+url_prefixes file ftp ftps gemini git gopher http https irc ircs kitty mailto news sftp ssh
+detect_urls yes
+copy_on_select yes
+strip_trailing_spaces smart
+select_by_word_characters @-./_~?&=%+#
+click_interval -1.0
+pointer_shape_when_grabbed arrow
+default_pointer_shape beam
+pointer_shape_when_dragging beam
+sync_to_monitor yes
+enable_audio_bell yes
+visual_bell_duration 0.0
+visual_bell_color none
+window_alert_on_bell yes
+bell_on_tab "U+26A0"
+enabled_layouts *
+window_border_width 1px
+draw_minimal_borders yes
+window_margin_width 2
+single_window_margin_width -1
+window_padding_width 2
+placement_strategy center
+bell_border_color #d65d0e
+inactive_text_alpha 1
+hide_window_decorations yes
+tab_bar_edge top
+tab_bar_margin_width 0.0
+tab_bar_margin_height 0.0 0.0
+tab_bar_style hidden
+tab_bar_align left
+tab_bar_min_tabs 2
+tab_switch_strategy previous
+tab_fade 0.25 0.5 0.75 1
+tab_separator " ┇"
+tab_powerline_style round
+tab_activity_symbol none
+tab_bar_background none
+tab_bar_margin_color none
+
+background_opacity 1.00
+# Start flavours
+# Base16 Tomorrow Night - kitty color config
+# Scheme by Chris Kempson (http://chriskempson.com)
+background #1d1f21
+foreground #c5c8c6
+selection_background #c5c8c6
+selection_foreground #1d1f21
+url_color #b4b7b4
+cursor #c5c8c6
+active_border_color #969896
+inactive_border_color #282a2e
+active_tab_background #1d1f21
+active_tab_foreground #c5c8c6
+inactive_tab_background #282a2e
+inactive_tab_foreground #b4b7b4
+tab_bar_background #282a2e
+
+# normal
+color0 #1d1f21
+color1 #cc6666
+color2 #b5bd68
+color3 #f0c674
+color4 #81a2be
+color5 #b294bb
+color6 #8abeb7
+color7 #c5c8c6
+
+# bright
+color8 #969896
+color9 #cc6666
+color10 #b5bd68
+color11 #f0c674
+color12 #81a2be
+color13 #b294bb
+color14 #8abeb7
+color15 #ffffff
+
+# extended base16 colors
+color16 #de935f
+color17 #a3685a
+color18 #282a2e
+color19 #373b41
+color20 #b4b7b4
+color21 #e0e0e0
+# End flavours
+
+editor nano
+allow_hyperlinks yes
+shell_integration enabled
+wayland_titlebar_color system
+linux_display_server auto
+kitty_mod ctrl+shift
+#: Copy to clipboard
+map kitty_mod+c copy_to_clipboard
+#: Paste from clipboard
+map kitty_mod+v paste_from_clipboard
+#: New window
+map kitty_mod+enter new_window
+#: Close window
+kitty_mod+w close_window
+# map shift+cmd+d close_window
+#: Next window
+map kitty_mod+] next_window
+#: Previous window
+map kitty_mod+[ previous_window
+#: Next tab
+map ctrl+shift+right next_tab
+map ctrl+shift+left previous_tab
+#: Next layout
+map kitty_mod+l next_layout
+# Reset the terminal
+map f1 clear_terminal reset active
+# Clear the terminal screen by erasing all contents
+map f1 clear_terminal clear active
+# Clear the terminal scrollback by erasing it
+map f1 clear_terminal scrollback active
+# Scroll the contents of the screen into the scrollback
+map f1 clear_terminal scroll active
+# Clear everything up to the line with the cursor
+map f1 clear_terminal to_cursor active
+#: Reload kitty.conf
+map ctrl+shift+f5 load_config_file
+
