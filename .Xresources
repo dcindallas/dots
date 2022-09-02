@@ -1,0 +1,60 @@
+! Start flavours
+! Base16 Bright Circles
+! Scheme: @duanecummins
+
+#define base00 #25252f
+#define base01 #454348
+#define base02 #656160
+#define base03 #847f79
+#define base04 #a49d92
+#define base05 #eeeeee
+#define base06 #ccc5b7
+#define base07 #c3bbaa
+#define base08 #c46b3c
+#define base09 #dc7244
+#define base0A #60837c
+#define base0B #df8746
+#define base0C #937b73
+#define base0D #957064
+#define base0E #dc4b4c
+#define base0F #aa6845
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+! End flavours
+
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
