@@ -46,7 +46,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 1
 # Activate smart borders (always)
 smart_borders on
 
@@ -64,7 +64,7 @@ exec ~/.screenlayout/screen.sh
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec_always --no-startup-id feh --bg-fill  /home/duane/Pictures/wallpaper/462.jpg
+exec --no-startup-id feh --bg-fill  /home/duane/Pictures/wallpaper/004.jpg
 
 # start xsettings or try to here
 # exec --no-startup-id xsettingsd &
@@ -92,7 +92,7 @@ exec --no-startup-id autotiling-rs &
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec --no-startup-id ~/.scripts/lock.sh &
-# exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 120 betterlockscreen -l
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 120 "" 'betterlockscreen -l' &
 
 # KEYBINDINGS -------------------------------------------------------
 #                                                                   -
@@ -131,7 +131,7 @@ for_window [class="floating_term"] border pixel 2
 #                                                                   -
 #--------------------------------------------------------------------
 
-bindsym F7 exec i3-dmenu-desktop --dmenu="dmenu -i -b -theme /home/duane/.config/rofi/dc-rofi/style-menu.rasi"
+bindsym F7 exec i3-dmenu-desktop --dmenu="dmenu -i -b -theme /home/duane/.config/rofi/dc-rofi/style-dmenu.rasi"
 bindsym F6 exec dmenu-bluetooth -theme /home/duane/.config/rofi/dc-rofi/style-bt.rasi
 bindsym $mod+a exec rofi -show drun -theme /home/duane/.config/rofi/dc-rofi/style-menu.rasi
 bindsym F5 exec networkmanager_dmenu -theme /home/duane/.config/rofi/dc-rofi/style-net.rasi
@@ -142,7 +142,7 @@ bindsym F4 exec rofi -show power-menu -theme /home/duane/.config/rofi/dc-rofi/st
 bindsym F8 exec polybar-msg cmd toggle &
 
 # common apps keybinds screenshot etc
-bindsym Print exec shutter -f -C -e -n -o "$HOME/Pictures/screenshots/%y_%m_%d_%T_$RR.png"
+bindsym Print exec maim ~/Pictures/screenshots/$(date +%s).png
 bindsym $alt+c exec gcolor3
 bindsym $alt+x exec xupric
 bindsym XF86HomePage exec google-chrome-beta
@@ -268,27 +268,27 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 #--------------------------------------------------------------------
 
 # Start flavours
-## Base16 Tomorrow Night
-# Author: Chris Kempson (http://chriskempson.com)
+## Base16 Bright Circles
+# Author: @duanecummins
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #1d1f21
-set $base01 #282a2e
-set $base02 #373b41
-set $base03 #969896
-set $base04 #b4b7b4
-set $base05 #c5c8c6
-set $base06 #e0e0e0
-set $base07 #ffffff
-set $base08 #cc6666
-set $base09 #de935f
-set $base0A #f0c674
-set $base0B #b5bd68
-set $base0C #8abeb7
-set $base0D #81a2be
-set $base0E #b294bb
-set $base0F #a3685a
+set $base00 #25252f
+set $base01 #454348
+set $base02 #656160
+set $base03 #847f79
+set $base04 #a49d92
+set $base05 #eeeeee
+set $base06 #ccc5b7
+set $base07 #c3bbaa
+set $base08 #c46b3c
+set $base09 #dc7244
+set $base0A #60837c
+set $base0B #df8746
+set $base0C #937b73
+set $base0D #957064
+set $base0E #dc4b4c
+set $base0F #aa6845
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
