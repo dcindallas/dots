@@ -6,6 +6,8 @@ compositing-overline = over
 compositing-underline = over
 compositing-border = over
 pseudo-transparency = true
+enable-ipc = true
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [global/wm]
@@ -13,8 +15,50 @@ margin-bottom = 0
 margin-top = 0
 include-file = ~/.config/polybar/colors.ini
 include-file = ~/.config/polybar/modules.ini
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/main]
+monitor = DP1
+dpi-x = 96
+dpi-y = 96
+monitor-strict = true
+override-redirect = true
+bottom = false
+fixed-center = true
+width = 2510
+height = 40
+offset-x = 25
+offset-y = 10
 background = ${color.background}
 foreground = ${color.foreground}
+radius-top = 0.0
+radius-bottom = 0.0
+line-size = 1
+line-color = ${color.base01}
+border-size = 1
+border-color = ${color.base01}
+padding-right = 0
+padding-left = 0
+module-margin-left = 1
+module-margin-right = 1
+font-0 = "SF Mono:style:Semibold:size=10.5;4"
+font-1 = "Iosevka Nerd Font:size=13;4"
+font-2 = "Iosevka Nerd Font:size=15;4"
+modules-left = updates date2 date1 weather
+modules-center = ewmh
+modules-right = spotify-prev spotify-play spotify-next spotify alsa LD power
+dim-value = 1.0
+wm-name = i3-wm
+enable-ipc = true
+tray-position = right
+tray-detached = false
+tray-maxsize = 14
+tray-background = ${color.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 1
+tray-scale = 1.0
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [bar/left]
@@ -25,8 +69,8 @@ monitor-strict = true
 override-redirect = true
 bottom = false
 fixed-center = true
-width = 860
-height = 35
+width = 720
+height = 38
 offset-x = 25
 offset-y = 15
 background = ${color.background}
@@ -34,18 +78,52 @@ foreground = ${color.foreground}
 radius-top = 0.0
 radius-bottom = 0.0
 line-size = 1
-line-color = ${color.foreground}
-border-size = 2
-border-color = ${color.gray0}
+line-color = ${color.base01}
+border-size = 1
+border-color = ${color.base02}
+padding-right = 0
+padding-left = 0
+module-margin-left = 1
+module-margin-right = 1
+font-0 = "SF Mono:style=Medium:size=10.5;3"
+font-1 = "Iosevka Nerd Font:size=13;3"
+modules-left = 
+modules-center = updates date2 date1 weather
+modules-right = 
+dim-value = 1.0
+wm-name = i3-wm
+enable-ipc = true
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/stats]
+monitor = DP1
+dpi-x = 96
+dpi-y = 96
+monitor-strict = true
+override-redirect = true
+bottom = false
+fixed-center = true
+width = 580
+height = 38
+offset-x = 780
+offset-y = 15
+background = ${color.background}
+foreground = ${color.foreground}
+radius-top = 0.0
+radius-bottom = 0.0
+line-size = 1
+line-color = ${color.base01}
+border-size = 1
+border-color = ${color.base02}
 padding-right = 1
 padding-left = 1
 module-margin-left = 1
-module-margin-right = 0
-font-0 = "Courier Prime:style=Regular:size=11;4"
-font-1 = "Iosevka Nerd Font:size=12;4"
-modules-left =
-modules-center = updates LD date1 date2 weather LD network LD filesystem
-modules-right =
+module-margin-right = 1
+font-0 = "SF Mono:style=Medium:size=10.5;3"
+font-1 = "Iosevka Nerd Font:size=12;3"
+modules-left = 
+modules-center =   network filesystem cpu memory
+modules-right = 
 dim-value = 1.0
 wm-name = i3-wm
 enable-ipc = true
@@ -60,60 +138,26 @@ override-redirect = true
 bottom = false
 fixed-center = true
 width = 200
-height = 35
-offset-x = 1430
+height = 38
+offset-x = 1390
 offset-y = 15
 background = ${color.background}
 foreground = ${color.foreground}
 radius-top = 0.0
 radius-bottom = 0.0
 line-size = 1
-line-color = ${color.foreground}
-border-size = 2
-border-color = ${color.gray0}
-padding-right = 2
-padding-left = 2
+line-color = ${color.base01}
+border-size = 1
+border-color = ${color.base02}
+padding-right = 1
+padding-left = 1
 module-margin-left = 0
 module-margin-right = 0
-font-0 = "Courier Prime:style=Regular:size=14;4"
-font-1 = "Iosevka Nerd Font:size=16;4"
+font-0 = "SF Mono:style=SemiBold:size=10;3"
+font-1 = "Iosevka Nerd Font:size=14;4"
 modules-left =
 modules-center =ewmh
 modules-right =
-dim-value = 1.0
-wm-name = i3-wm
-enable-ipc = true
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[bar/news]
-monitor = DP1
-dpi-x = 96
-dpi-y = 96
-monitor-strict = true
-override-redirect = true
-bottom = false
-fixed-center = true
-width = 500
-height = 35
-offset-x = 915
-offset-y = 15
-background = ${color.background}
-foreground = ${color.foreground}
-radius-top = 0.0
-radius-bottom = 0.0
-line-size = 1
-line-color = ${color.gray}
-border-size = 2
-border-color = ${color.gray0}
-padding-right = 0
-padding-left = 0
-module-margin-left = 0
-module-margin-right = 3
-font-0 = "Courier Prime:style=Regular:size=11;4"
-font-1 = "Iosevka Nerd Font:size=12;4"
-modules-left = rss
-modules-center = news
-modules-right = 
 dim-value = 1.0
 wm-name = i3-wm
 enable-ipc = true
@@ -127,9 +171,9 @@ monitor-strict = true
 override-redirect = true
 bottom = false
 fixed-center = false
-width = 680
-height = 35
-offset-x = 1650
+width = 670
+height = 38
+offset-x = 1630
 offset-y = 15
 background = ${color.background}
 foreground = ${color.foreground}
@@ -137,15 +181,16 @@ radius-top = 0.0
 radius-bottom = 0.0
 line-size = 1
 line-color = ${color.foreground}
-border-size = 2
-border-color = ${color.gray0}
-padding-right = 0
-padding-left = 0
+border-size = 1
+border-color = ${color.base02}
+padding-right = 1
+padding-left = 1
 module-margin-left = 1
 module-margin-right = 1
-font-0 = "Courier Prime:style=Regular:size=11;4"
-font-1 = "Iosevka Nerd Font:size=12;4"
-modules-left = volume
+font-0 = "SF Mono:style=Medium:size=10.5;3"
+font-1 = "Hack Nerd Font:style=Regular:size=13;4"
+font-2 = "Hack Nerd Font:style=Regular:size=18;4"
+modules-left = alsa
 modules-center = spotify
 modules-right = spotify-prev spotify-play spotify-next
 dim-value = 1.0
@@ -161,9 +206,9 @@ monitor-strict = true
 override-redirect = true
 bottom = false
 fixed-center = true
-width = 180
-height = 35
-offset-x = 2350
+width = 200
+height = 38
+offset-x = 2335
 offset-y = 15
 background = ${color.background}
 foreground = ${color.foreground}
@@ -171,14 +216,14 @@ radius-top = 0.0
 radius-bottom = 0.0
 line-size = 1
 line-color = ${color.foreground}
-border-size = 2
-border-color = ${color.gray0}
-padding-right = 0
-padding-left = 0
+border-size = 1
+border-color = ${color.base02}
+padding-right = 1
+padding-left = 1
 module-margin-left = 0
 module-margin-right = 0
-font-0 = "Courier Prime:style=Regular:size=11;4"
-font-1 = "Iosevka Nerd Font:size=15;4"
+font-0 = "SF Mono:style=SemiBold:size=10;3"
+font-1 = "Iosevka Nerd Font:size=13;3"
 modules-left = power LD
 modules-center =
 modules-right =
@@ -186,12 +231,12 @@ dim-value = 1.0
 wm-name = i3-wm
 enable-ipc = true
 tray-position = center
-tray-detached = true
+tray-detached = false
 tray-maxsize = 14
 tray-background = ${color.background}
 tray-offset-x = 25
 tray-offset-y = 0
-tray-padding = 0
+tray-padding = 1
 tray-scale = 1.0
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 

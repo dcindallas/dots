@@ -52,7 +52,6 @@ hook = "xrdb load ~/.Xresources"
 start= "! Start flavours"
 end = "! End flavours"
 
-<<<<<<< HEAD
 [[items]]
 file = "~/.config/i3/i3-status-rust/config.toml"
 template = "i3status-rust"
@@ -71,15 +70,12 @@ file = "~/.config/i3/config"
 template = "i3"
 subtemplate = "default"
 hook = "i3 reload"
-=======
-[[item]]
-file = "~/.config/i3/config"
-template = "i3"
-rewrite = false
-hook = "i3 reload"
 
->>>>>>> 17fac227a77aa8e341b6bff9a218493b27d60b13
-
+[[items]]
+file = "/home/duane/.config/rofi/dc-rofi/dc-theme.rasi"
+template = "rofi"
+subtemplate = "colors"
+rewrite = true
 
 # [[items]]
 # file = "~/.config/waybar/colors.css"

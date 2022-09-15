@@ -1,0 +1,60 @@
+image: ubuntu:20.04
+user: user
+command_prefix: |
+  # Make Bash not silently ignore errors.
+  set -euo pipefail
+tasks:
+  install_packages:
+    description: Install system packages.
+    user: root
+    command: |
+      # Install the following packages:
+      #
+      # - curl - Used for installing Tagref
+      # - git  - Used by base16-builder-ruby
+      # - ruby - Used to build the color scheme.
+      apt-get update
+      apt-get install --yes curl git ruby
+
+      # Install Bundler.
+      gem install bundler:1.14.6 # Must match the version in `base16-builder-ruby/Gemfile.lock`.
+
+  install_tagref:
+    description: Install Tagref, a reference checking tool.
+    dependencies:
+      - install_packages
+    user: root
+    command: |
+      # Install Tagref using the official installer script.
+      curl https://raw.githubusercontent.com/stepchowfun/tagref/main/install.sh -LSfs | sh
+
+  create_user:
+    description: Create a user who doesn't have root privileges.
+    user: root
+    command: |
+      # Create a user named `user` with a home directory.
+      adduser --disabled-password --gecos '' user
+
+  build:
+    description: Build the binary in non-release mode.
+    dependencies:
+      - create_user
+      - install_tagref
+    input_paths:
+      - base16-builder-ruby
+      - circus.yaml
+    output_paths:
+      - circus
+    command: |
+      # Build the color scheme.
+      export GEM_HOME="$HOME/.gem"
+      cd base16-builder-ruby
+      bundle install
+      ./builder update
+      rm -rf schemes
+      mkdir -p schemes/circus
+      cp ../circus.yaml schemes/circus
+      ./builder
+      cd ..
+      rm -rf circus
+      mv base16-builder-ruby/out circus

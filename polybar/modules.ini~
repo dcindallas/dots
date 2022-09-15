@@ -4,25 +4,13 @@
 ;indicator =
 ; Nerd font :   ,  ⏽,  樂 籠 錄 , 雷 絛
 
-[module/news]
-include-file = ~/.config/polybar/scripts/news/conf/module.conf
-content-padding = 3
-
-[module/rss]
-type = custom/text
-content = ""
-content-foreground = ${color.gray1}
-click-left =
-content-padding = 2
-format-content-font = 1
-
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/LD]
 type = custom/text
 content = ""
 content-background = ${color.background}
-content-foreground = ${color.color8}
+content-foreground = ${color.forground}
 label-padding = 0
 
 [module/updates]
@@ -31,15 +19,16 @@ exec = ~/.config/polybar/scripts/updates.sh
 tail = true
 interval = 5
 format = <label>
-format-prefix = ""
-format-prefix-foreground = ${color.blue}
+format-prefix = "  "
+format-prefix-foreground = #1793d1
 label-foreground = ${color.foreground}
 label = "%output%"
 click-left = kitty -e sudo pacman -Syu
 label-padding = 0
 format-prefix-font = 1
-label-minlen = 10
-;;label-maxlen = 9
+label-minlen = 8
+label-alignment = center
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/date1]
@@ -50,8 +39,8 @@ time = %I:%M %p
 date-alt = Its %A, %d %B %Y
 time-alt = at %k:%M:%S
 format = <label>
-format-prefix = ""
-format-prefix-foreground = ${color.gray1}
+format-prefix = ""
+format-prefix-foreground = ${color.base04}
 format-prefix-font = 1
 label = %date%
 label-padding = 1
@@ -65,8 +54,8 @@ time = %I:%M %p
 date-alt = It's %A, %d %B %Y
 time-alt = at %k:%M:%S
 format = <label>
-format-prefix = ""
-format-prefix-foreground = ${color.red}
+format-prefix = ""
+format-prefix-foreground = ${color.base04}
 label = %time%
 label-padding = 1
 format-prefix-font = 1
@@ -76,12 +65,16 @@ format-prefix-font = 1
 type = custom/script
 interval = 1800
 exec = ~/.config/polybar/weather/weather.sh
-format-prefix = ""
-format-prefix-foreground = ${color.gray1}
+format-prefix = ""
+format-prefix-foreground = ${color.base04}
 format-prefix-padding = 1
-label = "%output%° "
+label = "%output%"
 label-foreground = ${color.foreground}
 label-padding = 0
+label-maxlen = 22
+label-minlen = 22
+label-alignment = left
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/network]
@@ -92,22 +85,71 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 format-connected = <label-connected>
-format-connected-prefix = "直"
-format-connected-prefix-foreground = ${color.green}
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${color.base0C}
 format-connected-foreground = ${color.foreground}
 format-disconnected = <label-disconnected>
 format-disconnected-prefix = "睊"
-format-disconnected-prefix-foreground = ${color.red}
-format-label-disconnected-foreground = ${color.red}
-label-connected = "%essid%"
-downspeed-minwidth = 13
+format-disconnected-prefix-foreground = ${color.base0B}
+format-label-disconnected-foreground = ${color.base0B}
+label-connected = "%downspeed%"
+label-disconnected = "Down
+label-connected-padding = 1
+label-disconnected-padding = 1
+label-connected-minlen = 8
+label-connected-maxlen = 8
+label-connected-ellipsis = false
+click-left = exec networkmanager_dmenu -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/wifi]
+type = internal/network
+interface = wlo1
+interface-type = wireless
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+format-connected = <label-connected>
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${color.base06}
+format-connected-foreground = ${color.foreground}
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = "睊"
+format-disconnected-prefix-foreground = ${color.base0B}
+format-label-disconnected-foreground = ${color.base0B}
+label-connected = "%downspeed%"
+downspeed-minwidth = 5
 speed-unit =
 label-disconnected = "Net-Down"
 label-connected-padding = 1
 label-disconnected-padding = 1
-label-connected-minlen = 13
-label-connected-maxlen = 13
-click-left = exec networkmanager_dmenu -theme /home/duane/.config/rofi/launchers/type-6/style-7.rasi
+label-connected-minlen = 5
+label-connected-maxlen = 5
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/wifi-up]
+type = internal/network
+interface = wlo1
+interface-type = wireless
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+format-connected = <label-connected>
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${color.base06}
+format-connected-foreground = ${color.foreground}
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = "睊"
+format-disconnected-prefix-foreground = ${color.base0B}
+format-label-disconnected-foreground = ${color.base0B}
+label-connected = "%upspeed%"
+downspeed-minwidth = 5
+speed-unit =
+label-disconnected = "Net-Down"
+label-connected-padding = 1
+label-disconnected-padding = 1
+label-connected-minlen = 5
+label-connected-maxlen = 5
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/filesystem]
@@ -117,13 +159,13 @@ interval = 30
 fixed-values = true
 format-mounted = <label-mounted>
 format-mounted-prefix = ""
-format-mounted-prefix-foreground = ${color.gray1}
+format-mounted-prefix-foreground = ${color.base04}
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = "戀"
-format-unmounted-prefix-foreground = ${color.red}
-label-mounted = " %free%"
+format-unmounted-prefix-foreground = ${color.base02}
+label-mounted = " %free% "
 label-unmounted = " %mountpoint%: NA"
-left-click = exec nautilus &
+left-click = nautilus &
 label-mounted-padding = 0
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -131,14 +173,14 @@ label-mounted-padding = 0
 type = internal/cpu
 interval = 1
 format-cpu = <label>
-format-prefix = "  勞"
-format-prefix-foreground = ${color.gray1}
-label = " %percentage%%"
-click-left = exec tilix -e bpytop
+format-prefix = ""
+format-prefix-foreground = ${color.base04}
+label = "%percentage%%"
+click-left = exec kitty -e bpytop
 label-padding = 1
 label-cpu-minlen = 13
 label-cpu-maxlen = 13
-format-label-font = 0
+format-label-font = 1
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/memory]
@@ -146,7 +188,7 @@ type = internal/memory
 interval = 1
 format-mem = <label>
 format-prefix = ""
-format-prefix-foreground = ${color.gray1}
+format-prefix-foreground = ${color.base04}
 label = %gb_free%
 label-padding = 1
 label-mem-minlen = 13
@@ -154,20 +196,16 @@ label-mem-maxlen = 13
 
 [module/ewmh]
 type = internal/xworkspaces
-format-icon-font = 1
+format-icon-font = 2
 ; Only show workspaces defined on the same output as the bar
-
 ; Default: false
 pin-workspaces = false
-
 ; Create click handler used to focus desktop
 ; Default: true
 enable-click = true
-
 ; Create scroll handlers used to cycle desktops
 ; Default: true
 enable-scroll = true
-
 icon-0 = "1;"
 icon-1 = "2;"
 icon-2 = "3;"
@@ -177,103 +215,38 @@ icon-5 = "6;"
 icon-6 = "7;●"
 icon-7 = "8;●"
 icon-default = ""
-
 format = <label-state>
-
 label-monitor = %name%
-
 label-active ="%icon%"
-label-active-foreground = ${color.green}
-
+label-active-foreground = ${color.base0E}
 label-occupied = %icon%
-label-occupied-foreground = ${color.gray1}
-
+label-occupied-foreground = ${color.base02}
 label-urgent = %icon%
-label-urgent-foreground = ${color.red}
-
+label-urgent-foreground = ${color.base0B}
 ; Default: %icon%  %name%
 label-empty = %icon%
-label-empty-foreground = ${color.gray2}
+label-empty-foreground = ${color.base01}
 label-active-padding = 1
 label-urgent-padding = 1
 label-occupied-padding = 1
 label-empty-padding = 1
-
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-
-[module/volume]
+[module/alsa]
 type = internal/volume
-format-volume = <label-volume> <bar-volume>
-label-volume = ""
-label-volume-foreground = ${color.gray1}
-label-volume-padding = 2
+format-volume = <label-volume>
+label-volume = "%percentage%"
+label-volume-minlen = 4
+label-volume-foreground = ${color.foreground}
+format-volume-prefix = "   墳"
+format-volume-prefix-foreground = ${color.base09}
+label-volume-padding = 1
 format-muted-prefix = "婢"
-format-muted-prefix-foreground = ${color.red}
+format-muted-prefix-foreground = ${color.base0B}
 format-muted-foreground = ${color.foreground}
 label-muted = "Muted"
-label-muted-padding = 10
-bar-volume-width = 12
-bar-volume-foreground-0 = ${color.green}
-bar-volume-foreground-1 = ${color.green}
-bar-volume-foreground-2 = ${color.green}
-bar-volume-foreground-3 = ${color.green}
-bar-volume-foreground-4 = ${color.green}
-bar-volume-foreground-5 = ${color.yellow}
-bar-volume-foreground-6 = ${color.red}
-bar-volume-gradient = false
-bar-volume-indicator = "雷"
-bar-volume-indicator-foreground = ${color.gray1}
-bar-volume-indicator-font = 1
-bar-volume-fill = "─"
-bar-volume-fill-font = 1
-bar-volume-empty = "─"
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${color.gray0}
-
+label-muted-padding = 1
 click-right = pavucontrol
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/net]
-type = internal/network
-interface = wlo1
-interval = 3.0
-unknown-as-up = true
-format-connected-background = ${color.background}
-format-connected-foreground = ${color.foreground}
-format-connected-padding = 1
-format-connected = %{A1:/home/duane/.config/polybar/scripts/rofi-network-manager/rofi-network-manager.sh:}<ramp-signal> <label-connected>%{A}
-label-connected = %essid%/%local_ip%
-format-disconnected-background = ${color.background}
-format-disconnected-foreground = ${color.foreground}
-format-disconnected-padding = 1
-format-disconnected = %{A1:/home/duane/.config/polybar/scripts/rofi-network-manager/rofi-network-manager.sh:}<label-disconnected>%{A}
-label-disconnected ="睊"
-ramp-signal-0 = "1"
-ramp-signal-1 = "2"
-ramp-signal-2 = "3"
-ramp-signal-3 = "4"
-ramp-signal-4 = "5"
-ramp-signal-foreground = ${color.foreground}
-
-#~ type = custom/text
-#~ content = "慎"
-#~ content-foreground = ${color.green}
-#~ click-left = ~/.config/rofi/rofi-wifi-menu/rofi-wifi-menu.sh -theme ~/.config/rofi/rofi-wifi-menu/wifi.rasi
-#~ content-padding = 3
-#~ format-content-font = 1
-#~ format-prefix-font = 2
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/music]
-type = custom/text
-content = "墳"
-content-foreground = ${color.gray1}
-click-left =
-content-padding = 3
-format-content-font = 2
-
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/spotify]
@@ -284,18 +257,22 @@ interval = 1
 format = <label>
 exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
 label-padding = 1
-label-maxlen = 25
+label-maxlen = 30
+label-minlen = 30
 format-foreground = ${color.foreground}
 format-prefix = ""
-format-prefix-foreground = ${color.gray1}
-format-content-font = 0
-;label-content-minlen = 26
-;label-content-maxlen = 26
+format-prefix-foreground = ${color.gray0}
+format-label-font = 2
+format-content-font = 2
+label-ellipsis = false
+label-alignment = center
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 
 [module/spotify-prev]
 type = custom/text
-content = "ﰈ"
-content-foreground = ${color.gray1}
+content = "丹"
+content-foreground = ${color.base0E}
 click-left = playerctl next
 content-padding = 2
 format-content-font = 1
@@ -303,15 +280,15 @@ format-content-font = 1
 [module/spotify-play]
 type = custom/text
 content = "契"
-content-foreground = ${color.green}
+content-foreground = ${color.base0C}
 click-left = playerctl -a play-pause
 content-padding = 2
 format-content-font = 1
 
 [module/spotify-next]
 type = custom/text
-content = "﯐"
-content-foreground = ${color.gray1}
+content = "  "
+content-foreground = ${color.base0E}
 click-left = playerctl next
 content-padding = 2
 format-prefix-font = 1
@@ -320,9 +297,9 @@ format-prefix-font = 1
 [module/power]
 type = custom/text
 content = "襤"
-content-foreground = ${color.yellow}
+content-foreground = ${color.base03}
 content-background = ${color.background}
-content-padding = 2
-click-left = exec rofi -show power-menu -theme /home/duane/.config/rofi/power-menu.rasi -modi power-menu:rofi-power-menu -width: "300"
+content-padding = 0
+click-left = exec rofi -show power-menu -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi -modi power-menu:rofi-power-menu -width: "300"
 format-prefix-font = 1
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

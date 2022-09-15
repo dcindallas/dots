@@ -1,0 +1,12 @@
+default:
+    extension: .config
+    output: themes
+
+
+client-properties:
+    extension: .config
+    output: client-properties
+
+colors:
+    extension: .config
+    output: colors

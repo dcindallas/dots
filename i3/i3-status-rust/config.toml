@@ -3,21 +3,21 @@
 # vi:syntax=toml
 
 # base16-i3status-rust (https://github.com/mystfox/base16-i3status-rust)
-# Bright Circles by @duanecummins
+# Light Mode by @duanecummins
 
 [theme]
 theme = "solarized-dark"
 [theme.overrides]
-idle_bg = "#25252f"
+idle_bg = "#191c20"
 idle_fg = "#eeeeee"
-info_bg = "#937b73"
-info_fg = "#25252f"
-good_bg = "#df8746"
-good_fg = "#25252f"
-warning_bg = "#60837c"
-warning_fg = "#25252f"
-critical_bg = "#c46b3c"
-critical_fg = "#25252f"
+info_bg = "#94c90f"
+info_fg = "#191c20"
+good_bg = "#917D5A"
+good_fg = "#191c20"
+warning_bg = "#fd1f4a"
+warning_fg = "#191c20"
+critical_bg = "#ffff66"
+critical_fg = "#191c20"
 # The rest of the theme settings are left at default.
 # End flavours
 

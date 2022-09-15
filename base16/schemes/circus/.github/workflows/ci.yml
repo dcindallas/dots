@@ -1,0 +1,20 @@
+name: Continuous integration
+on: [push, pull_request]
+jobs:
+  ci:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - if: ${{ github.event_name == 'push' }}
+      uses: azure/docker-login@v1
+      with:
+        username: stephanmisc
+        password: ${{ secrets.DOCKER_PASSWORD }}
+    - uses: stepchowfun/toast/.github/actions/toast@main
+      with:
+        tasks: build
+        docker_repo: stephanmisc/toast
+        write_remote_cache: ${{ github.event_name == 'push' }}

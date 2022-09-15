@@ -12,7 +12,7 @@
 # 'autosens' will attempt to decrease sensitivity if the bars peak. 1 = on, 0 = off
 # new as of 0.6.0 autosens of low values (dynamic range)
 # 'overshoot' allows bars to overshoot (in % of terminal height) without initiating autosens. DEPRECATED as of 0.6.0
-autosens = 0
+autosens = 1
 overshoot = 0
 
 # Manual sensitivity in %. Autosens must be turned off for this to take effect.
@@ -65,7 +65,7 @@ source = auto
 # 'noncurses' is for systems that does not suport ncurses.
 # 'raw' is a 16 bit data stream of the bar heights that can be used to send to other applications.
 # 'raw' defaults to 200 bars, which can be adjusted in the 'bars' option above.
-method = ncurses
+method = noncurses
 
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
@@ -93,35 +93,35 @@ channels = stereo
 
 gradient = 1
 
-gradient_color_1 = '#f0c674'
-gradient_color_2 = '#ddc977'
-gradient_color_3 = '#cbcb7d'
-gradient_color_4 = '#bacb85'
-gradient_color_5 = '#abcb8f'
-gradient_color_6 = '#9eca99'
-gradient_color_7 = '#93c8a3'
-gradient_color_8 = '#8dc5ab'
-gradient_color_9 = '#8ac2b2'
-gradient_color_10 ='#8abeb7'
+gradient_color_1 = '#eeeeee'
+gradient_color_2 = '#ccc5b7'
+gradient_color_3 = '#847f79'
+gradient_color_4 = '#937b73'
+gradient_color_5 = '#957064'
+gradient_color_6 = '#df8746'
+gradient_color_7 = '#dc7244'
+gradient_color_8 = '#c46b3c'
+gradient_color_9 = '#dc4b4c'
+gradient_color_10 ='#60837c'
 
+#eeeeee
+#dee2e1
+#ced6d5
+#bfcac8
+#afbebb
+#9fb3af
+#8fa7a2
+#809b95
+#708f89
+#60837c
 
-#f0c674
-#ddc977
-#cbcb7d
-#bacb85
-#abcb8f
-#9eca99
-#93c8a3
-#8dc5ab
-#8ac2b2
-#8abeb7
 
 
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
-; integral = 70
+; integral = 50
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
 monstercat = 0

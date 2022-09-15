@@ -88,7 +88,7 @@ text_icon_padding = 20
 
 # Defines width in pixels of frame around the notification window.
 # Set to 0 to disable.
-frame_width = 2
+frame_width = 1
 
 # Defines color of the frame around the notification window.
 
@@ -96,7 +96,7 @@ frame_width = 2
 # If value is greater than 0, separator_height will be ignored and a border
 # of size frame_width will be drawn around each notification instead.
 # Click events on gaps do not currently propagate to applications below.
-gap_size = 15
+gap_size = 5
 
 # Define a color for the separator.
 # possible values are:
@@ -118,7 +118,7 @@ idle_threshold = 120
 
 ### Text ###
 
-font = "SF Mono SemiBold 10.5"
+font = "SF Pro Display 11"
 
 # The spacing between lines.  If the height is smaller than the
 # font height, it will get raised to the font height.
@@ -146,7 +146,7 @@ line_height = 2
 #
 # It's important to note that markup inside the format option will be parsed
 # regardless of what this is set to.
-markup = full
+markup = no
 
 # The format of the message.  Possible variables are:
 #   %a  appname
@@ -158,7 +158,7 @@ markup = full
 #   %n  progress value if set without any extra characters
 #   %%  Literal %
 # Markup is allowed
-format = "<b>%s</b>\n%b"
+format = "%s\n%b"
 
 # Alignment of message text.
 # Possible values are "left", "center" and "right".
@@ -308,22 +308,22 @@ per_monitor_dpi = false
 #--------------------------------------------------------------------
 
 # Start Flavours
-frame_color = "#454348"
+frame_color = "#2f3236"
 separator_color = "#eeeeee"
 
 [base16_low]
     msg_urgency = low
-    background = "#25252f"
+    background = "#191c20"
     foreground = "#eeeeee"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#25252f"
+    background = "#191c20"
     foreground = "#eeeeee"
 
 [base16_critical]
     msg_urgency = critical
-    background = "#c46b3c"
+    background = "#ffff66"
     foreground = "#eeeeee"
 # End Flavours
 
