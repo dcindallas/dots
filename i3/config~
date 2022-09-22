@@ -5,7 +5,7 @@ set $mod Mod4
 set $alt Mod1
 
 # Set the font
-font pango: "Noto Sans Regular 10;3"
+font pango: "LiveMono:style=Regular:size=10.5;3"
 
 # SPECIAL WINDOW ACTIONS -------------------------------------------
 #                                                                  -
@@ -64,7 +64,7 @@ exec ~/.screenlayout/screen.sh
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec --no-startup-id feh --bg-fill  /home/duane/Pictures/wallpaper/g.png
+exec --no-startup-id feh --bg-fill  /home/duane/Pictures/wallpaper/wall-green.png
 
 # start xsettings or try to here
 # exec --no-startup-id xsettingsd &
@@ -112,7 +112,7 @@ floating_modifier $mod
 # set the gaps and adjust them when you want
 gaps inner 20
 gaps outer 5
-gaps top 48
+gaps top 50
 bindsym $mod+z		gaps outer current plus 5
 bindsym $mod+Shift+z	gaps outer current minus 5
 
@@ -258,8 +258,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 ## music control
-bindsym $mod+F10 exec playerctl next
-bindsym $mod+F9 exec playerctl previous
+bindsym $mod+F2 exec playerctl next
+bindsym $mod+F1 exec playerctl previous
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioStop exec --no-startup-id playerctl stop
 
@@ -268,27 +268,27 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 #--------------------------------------------------------------------
 
 # Start flavours
-## Base16 Bright Circles
+## Base16 Light Mode
 # Author: @duanecummins
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #25252f
-set $base01 #454348
-set $base02 #656160
-set $base03 #847f79
-set $base04 #a49d92
-set $base05 #dbd6cc
-set $base06 #D3B890
-set $base07 #eeeeee
-set $base08 #c46b3c
-set $base09 #dc7244
-set $base0A #60837c
-set $base0B #df8746
-set $base0C #aec53b
-set $base0D #957064
-set $base0E #dc4b4c
-set $base0F #7d7b76
+set $base00 #191c20
+set $base01 #2f3236
+set $base02 #56615d
+set $base03 #7f886b
+set $base04 #86817b
+set $base05 #ffffff
+set $base06 #b2b09d
+set $base07 #FFAC1D
+set $base08 #ffff66
+set $base09 #ff6f3d
+set $base0A #ffa263
+set $base0B #917D5A
+set $base0C #94c90f
+set $base0D #3083dc
+set $base0E #Cd3f45
+set $base0F #7351fe
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
