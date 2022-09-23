@@ -60,9 +60,9 @@ mainbox {
 }
 
 imagebox {
-    padding:                     20px;
+    padding:                     30px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/dc-rofi/images/g.png", height);
+    background-image:            url("~/.config/rofi/dc-rofi/images/g2.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
@@ -87,7 +87,7 @@ inputbar {
     border-radius:               3px;
     background-color:            @lightbg;
     background-color:            @lightbg;
-    text-color:                  @lightfg;
+    text-color:                  @foreground;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 textbox-prompt-colon {
@@ -168,7 +168,7 @@ element normal.active {
 }
 element selected.normal {
     background-color:            @lightfg;
-    text-color:                  @lightbg;
+    text-color:                  @background;
 }
 element selected.urgent {
     background-color:            @urgent;

@@ -5,7 +5,7 @@
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
 #: characters.
-font_family      SF Mono Medium
+font_family      SF Mono Regular
 bold_font        SF Mono Bold
 italic_font      SF Mono Italic
 bold_italic_font SF Mono Bold Italic
@@ -50,9 +50,9 @@ window_margin_width 2
 single_window_margin_width -1
 window_padding_width 10
 placement_strategy center
-window_logo_path /home/duane/Pictures/kitty_logo/logo.png
+#window_logo_path /home/duane/Pictures/kitty_logo/logo-1.png
 window_logo_position bottom-right
-window_logo_alpha 0.2
+window_logo_alpha 0.30
 bell_border_color #d65d0e
 inactive_text_alpha 1
 hide_window_decorations yes
@@ -72,49 +72,49 @@ tab_bar_margin_color none
 
 background_opacity 1.00
 # Start flavours
-# Base16 Bright Circles - kitty color config
+# Base16 dc-dark-leaf - kitty color config
 # Scheme by @duanecummins
-background #202025
-foreground #ebe8e3
-selection_background #ebe8e3
-selection_foreground #202025
-url_color #a49d92
-cursor #ebe8e3
-active_border_color #847f79
-inactive_border_color #454348
-active_tab_background #202025
-active_tab_foreground #ebe8e3
-inactive_tab_background #454348
-inactive_tab_foreground #a49d92
-tab_bar_background #454348
+background #24262e
+foreground #d9d9e6
+selection_background #d9d9e6
+selection_foreground #24262e
+url_color #a8a9b9
+cursor #d9d9e6
+active_border_color #878897
+inactive_border_color #454751
+active_tab_background #24262e
+active_tab_foreground #d9d9e6
+inactive_tab_background #454751
+inactive_tab_foreground #a8a9b9
+tab_bar_background #454751
 
 # normal
-color0 #202025
-color1 #c1b28e
-color2 #Cd3f45
-color3 #fe51dc
-color4 #51dcfe
-color5 #feca51
-color6 #dcfe51
-color7 #ebe8e3
+color0 #24262e
+color1 #DAFD50
+color2 #828C89
+color3 #FFA263
+color4 #3083DC
+color5 #CD3F45
+color6 #C1B28E
+color7 #d9d9e6
 
 # bright
-color8 #847f79
-color9 #c1b28e
-color10 #Cd3f45
-color11 #fe51dc
-color12 #51dcfe
-color13 #feca51
-color14 #dcfe51
-color15 #eeeeee
+color8 #878897
+color9 #DAFD50
+color10 #828C89
+color11 #FFA263
+color12 #3083DC
+color13 #CD3F45
+color14 #C1B28E
+color15 #cacadc
 
 # extended base16 colors
-color16 #dc7244
-color17 #7351fe
-color18 #454348
-color19 #656160
-color20 #a49d92
-color21 #D3B890
+color16 #767692
+color17 #7351FE
+color18 #454751
+color19 #666774
+color20 #a8a9b9
+color21 #d1d1e1
 # End flavours
 
 editor nano

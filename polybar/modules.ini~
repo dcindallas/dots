@@ -2,17 +2,16 @@
 ;fill = 
 ;empty = ─
 ;indicator =
-; Nerd font :   ,  ⏽,  樂 籠 錄 , 雷 絛
+; Nerd font :    ,  ⏽,  樂 籠 錄 , 雷 絛
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/LD]
 type = custom/text
 content = ""
-content-background = ${color.base02}
-content-foreground = ${color.background}
-content-padding-right = 0
-content-font = 2
+content-background = ${color.background}
+content-foreground = ${color.base03}
+
 
 [module/LD2]
 type = custom/text
@@ -29,9 +28,9 @@ tail = true
 interval = 5
 format = <label>
 format-prefix = ""
-label = "%output% "
+label = "%output%"
 label-padding = 0
-format-prefix-font = 1
+format-prefix-font = 3
 ;label-font = 2
 label-minlen = 5
 label-alignment = center
@@ -39,7 +38,7 @@ label-foreground = ${color.foreground}
 label-background = ${color.background}
 label-underline  = ${color.background}
 label-overline  = ${color.background}
-format-prefix-foreground = ${color.base0B}
+format-prefix-foreground = ${color.base0C}
 format-prefix-background = ${color.background}
 format-prefix-underline  = ${color.background}
 format-prefix-overline  = ${color.background}
@@ -47,30 +46,7 @@ click-left = exec kitty -e sudo pacman -Syyuu
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/date1]
-type = internal/date
-interval = 1.0
-date = %a, %b %e
-time = %I:%M %p
-date-alt = Its %A, %d %B %Y
-time-alt = at %k:%M:%S
-format = <label>
-format-prefix = ""
-format-prefix-font = 3
-label = "%date%"
-label-padding = 0
-label-alignment = center
-format-prefix-foreground = ${color.base02}
-format-prefix-background = ${color.background}
-format-prefix-underline  = ${color.background}
-format-prefix-overline  = ${color.background}
-format-prefix-padding = 1
-label-background = ${color.background}
-label-underline  = ${color.background}
-label-overline  = ${color.background}
-;;  _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/date2]
+[module/time]
 type = internal/date
 interval = 1.0
 date = %A %d %B
@@ -78,11 +54,11 @@ time = %I:%M %p
 date-alt = It's %A, %d %B %Y
 time-alt = at %k:%M:%S
 format = <label>
-format-prefix = ""
-label = "%time%" 
+format-prefix = "•"
+label = "%time%"
 label-padding = 0
-format-prefix-font = 3
-format-prefix-foreground = ${color.base02}
+format-prefix-font = 1
+format-prefix-foreground = ${color.base0D}
 format-prefix-background = ${color.background}
 format-prefix-underline  = ${color.background}
 format-prefix-overline  = ${color.background}
@@ -92,19 +68,42 @@ label-underline  = ${color.background}
 label-overline  = ${color.background}
 ; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+[module/date]
+type = internal/date
+interval = 1.0
+date = %a, %b %e
+time = %I:%M %p
+date-alt = Its %A, %d %B %Y
+time-alt = at %k:%M:%S
+format = <label>
+format-prefix = "•"
+format-prefix-font = 1
+label = "%date%"
+label-padding = 0
+label-alignment = center
+format-prefix-foreground = ${color.base0D}
+format-prefix-background = ${color.background}
+format-prefix-underline  = ${color.background}
+format-prefix-overline  = ${color.background}
+format-prefix-padding = 1
+label-background = ${color.background}
+label-underline  = ${color.background}
+label-overline  = ${color.background}
+;;  _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 [module/weather]
 type = custom/script
 interval = 1800
 exec = ~/.config/polybar/weather/weather.sh
-format-prefix = ""
+format-prefix = "•"
 label = "%output%"
 label-foreground = ${color.foreground}
-label-padding = 1
-label-maxlen = 20
-label-minlen = 20
+label-padding = 0
+label-maxlen = 25
+label-minlen = 25
 label-alignment = left
-format-prefix-font = 3
-format-prefix-foreground = ${color.base07}
+format-prefix-font = 1
+format-prefix-foreground = ${color.base0D}
 format-prefix-background = ${color.background}
 format-prefix-underline  = ${color.background}
 format-prefix-overline  = ${color.background}
@@ -160,26 +159,26 @@ format = <label-state>
 label-monitor = %name%
 
 label-active ="%name%"
-label-active-foreground = ${color.base07}
+label-active-foreground = ${color.base05}
 label-active-padding = 1
 label-active-underline = ${color.background}
 label-active-overline = ${color.background}
 label-active-background = ${color.background}
-label-active-font = 2
+label-active-font = 1
 label-occupied-font = 0
 
 label-occupied = %name%
-label-occupied-foreground = ${color.base02}
+label-occupied-foreground = ${color.base09}
 label-occupied-padding = 1
 label-occupied-underline = ${color.background}
 
 label-urgent = %icon%
-label-urgent-foreground = ${color.base0A}
+label-urgent-foreground = ${color.base0E}
 label-urgent-padding = 1
 label-urgent-underline = ${color.background}
 
 label-empty = %icon%
-label-empty-foreground = ${color.base01}
+label-empty-foreground = ${color.base03}
 label-empty-padding = 1
 label-empty-underline = ${color.background}
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -188,9 +187,10 @@ label-empty-underline = ${color.background}
 [module/alsa]
 type = internal/alsa
 format-volume = <label-volume> <bar-volume>
-label-volume = ""
-label-volume-foreground = ${color.base07}
-bar-volume-indicator-foreground = ${color.base07}
+label-volume = "•"
+label-volume-font = 1
+label-volume-foreground = ${color.base08}
+bar-volume-indicator-foreground = ${color.base05}
 format-muted-prefix = "婢 "
 format-muted-prefix-foreground = ${color.base0E}
 format-muted-foreground = ${color.base04}
@@ -201,17 +201,17 @@ bar-volume-foreground-0 = ${color.base04}
 bar-volume-foreground-1 = ${color.base04}
 bar-volume-foreground-2 = ${color.base04}
 bar-volume-foreground-3 = ${color.base04}
-bar-volume-foreground-5 = ${color.base04}
-bar-volume-foreground-6 = ${color.base04}
-
-bar-volume-gradient = false
-bar-volume-indicator = ♪
+bar-volume-foreground-5 = ${color.base0E}
+bar-volume-foreground-6 = ${color.base0E}
+bar-volume-gradient = true
+bar-volume-indicator = "♪"
 bar-volume-indicator-font = 1
+;label-volume-font = 2
 bar-volume-fill = ─
-bar-volume-fill-font = 1
+bar-volume-fill-font = 2
 bar-volume-empty = ─
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${color.base03}
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${color.base01}
 click-right = exec pavucontrol &
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -229,7 +229,7 @@ format-prefix = " "
 label-font = 1
 label-ellipsis = false
 label-alignment = center
-label-padding = 3
+label-padding = 1
 #label-background = ${color.bg}
 #label-underline  = ${color.bg}
 #label-overline  = ${color.bg}
@@ -245,8 +245,8 @@ format-prefix-foreground = ${color.base07}
 type = custom/text
 content = ""
 click-left = playerctl next
-format-content-font = 1
-content-foreground = ${color.base06}
+format-content-font = 2
+content-foreground = ${color.base09}
 #content-background = ${color.bg}
 #content-underline  = ${color.bg}
 #content-overline  = ${color.bg}
@@ -256,8 +256,8 @@ content-padding = 2
 type = custom/text
 content = ""
 click-left = playerctl -a play-pause
-format-content-font = 1
-content-foreground = ${color.base07}
+format-content-font = 2
+content-foreground = ${color.base06}
 ;content-background = ${color.bg}
 ;content-underline  = ${color.bg}
 ;content-overline  = ${color.bg}
@@ -267,8 +267,8 @@ content-padding = 2
 type = custom/text
 content = ""
 click-left = playerctl next
-format-prefix-font = 1
-content-foreground = ${color.base06}
+content-font = 2
+content-foreground = ${color.base09}
 #content-background = ${color.bg}
 #content-underline  = ${color.bg}
 #content-overline  = ${color.bg}
@@ -279,11 +279,11 @@ content-padding = 2
 [module/power]
 type = custom/text
 content = "襤"
-content-foreground = ${color.base07}
-content-background = ${color.base02}
-content-underline  = ${color.base02}
-content-overline  = ${color.base02}
-content-padding = 2
+content-foreground = ${color.base05}
+content-background = ${color.background}
+content-underline  = ${color.background}
+content-overline  = ${color.background}
+content-padding = 1
 click-left = exec rofi -show power-menu -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi -modi power-menu:rofi-power-menu -width: "300"
 format-prefix-font = 1
 
@@ -293,21 +293,20 @@ format-prefix-font = 1
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-
 [module/filesystem]
 type = internal/fs
 mount-0 = /
 interval = 30
 fixed-values = true
 format-mounted = <label-mounted>
-format-mounted-prefix = ""
-format-mounted-prefix-foreground = ${color.base04}
+format-mounted-prefix = "•"
+format-mounted-prefix-foreground = ${color.base0C}
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = "戀"
 format-unmounted-prefix-foreground = ${color.base02}
 label-mounted = " %free% "
 label-unmounted = " %mountpoint%: NA"
-left-click = nautilus &
+left-click = exec nautilus &
 format-mounted-padding = 1 
 format-mounted-background = ${color.background}
 format-mounted-underline  = ${color.background}
@@ -317,14 +316,14 @@ format-mounted-overline  = ${color.background}
 [module/cpu]
 type = internal/cpu
 interval = 1
-format = <label> <ramp-coreload>
+format = <label>
 label = "%percentage%%"
 label-padding = 0
 label-minlen = 4
 label-maxlen = 4
 format-label-font = 2
-format-prefix = ""
-format-prefix-foreground = ${color.base0B}
+format-prefix = "ﳊ"
+format-prefix-foreground = ${color.base09}
 format-prefix-background = ${color.background}
 format-prefix-underline  = ${color.background}
 format-prefix-overline  = ${color.background}
@@ -333,6 +332,7 @@ label-background = ${color.background}
 label-underline  = ${color.background}
 label-overline  = ${color.background}
 label-ramp-coreload-foreground = ${color.base0B}
+label-ellipsis = false
 
 ; Spacing (number of spaces, pixels, points) between individual per-core ramps
 ramp-coreload-spacing = 0.5
@@ -353,16 +353,17 @@ format-mem = <label>
 format-prefix = ""
 label = %gb_free%
 label-padding = 1
-label-mem-minlen = 10
-label-mem-maxlen = 10
+label-minlen = 7
+label-maxlen = 7
 label-background = ${color.background}
 label-underline  = ${color.background}
 label-overline  = ${color.background}
-format-prefix-foreground = ${color.base0B}
+format-prefix-foreground = ${color.base09}
 format-prefix-background = ${color.background}
 format-prefix-underline = ${color.background}
 format-prefix-overline = ${color.background}
 format-prefix-padding = 0
+label-ellipsis = false
 
 
 [module/wifi]

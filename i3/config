@@ -46,7 +46,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 # Activate smart borders (always)
 smart_borders on
 
@@ -64,7 +64,7 @@ exec ~/.screenlayout/screen.sh
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec_always --no-startup-id feh --recursive --bg-fill --randomize /home/duane/Pictures/wallpaper/random
+exec --no-startup-id feh  --bg-fill /home/duane/Pictures/wallpaper/531.jpg
 # start xsettings or try to here
 # exec --no-startup-id xsettingsd &
 
@@ -142,16 +142,16 @@ bindsym F4 exec rofi -show power-menu -theme /home/duane/.config/rofi/dc-rofi/st
 bindsym F8 exec polybar-msg cmd toggle &
 
 # common apps keybinds screenshot etc
-bindsym Print exec maim ~/Pictures/screenshots/$(date +%s).png
-bindsym $alt+c exec gcolor3
-bindsym $alt+x exec xupric
-bindsym XF86HomePage exec google-chrome-beta
-bindsym $alt+f exec nautilus
-bindsym $alt+g exec geany
-bindsym $alt+s exec spotify
-bindsym $alt+p exec pithos
-bindsym XF86Mail exec thunderbird
-bindsym XF86Calculator exec gnome-calculator
+bindsym Print exec maim --delay=5.0 ~/Pictures/screenshots/$(date +%s).png
+bindsym $alt+c exec gcolor3 &
+bindsym $alt+x exec google-chrome-beta &
+bindsym XF86HomePage exec librewolf &
+bindsym $alt+f exec nautilus &
+bindsym $alt+g exec geany &
+bindsym $alt+s exec spotify &
+bindsym $alt+p exec pithos &
+bindsym XF86Mail exec thunderbird &
+bindsym XF86Calculator exec gnome-calculator &
 
 # kill focused window
 bindsym $mod+q kill
@@ -278,7 +278,7 @@ set $base01 #454751
 set $base02 #666774
 set $base03 #878897
 set $base04 #a8a9b9
-set $base05 #d9d9e6
+set $base05 #eeeeee
 set $base06 #d1d1e1
 set $base07 #cacadc
 set $base08 #DAFD50
@@ -292,11 +292,11 @@ set $base0F #7351FE
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base01 $base00 $base05 $base02 $base03
-client.focused_inactive $base01 $base00 $base05 $base00 $base03
-client.unfocused        $base01 $base00 $base05 $base00 $base03
+client.focused          $base00 $base00 $base05 $base02 $base01
+client.focused_inactive $base00 $base00 $base05 $base00 $base01
+client.unfocused        $base00 $base00 $base05 $base00 $base01
 client.urgent           $base08 $base08 $base05 $base08 $base08
-client.placeholder      $base01 $base00 $base05 $base00 $base03
+client.placeholder      $base00 $base00 $base05 $base00 $base01
 client.background       $base07
 
 # i3 Bar  -----------------------------------------------------------

@@ -118,7 +118,7 @@ idle_threshold = 120
 
 ### Text ###
 
-font = "SF Pro Display 11"
+font = "SF Pro Display 12"
 
 # The spacing between lines.  If the height is smaller than the
 # font height, it will get raised to the font height.
@@ -308,22 +308,22 @@ per_monitor_dpi = false
 #--------------------------------------------------------------------
 
 # Start Flavours
-frame_color = "#2f3236"
+frame_color = "#666774"
 separator_color = "#eeeeee"
 
 [base16_low]
     msg_urgency = low
-    background = "#191c20"
+    background = "#24262e"
     foreground = "#eeeeee"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#191c20"
+    background = "#24262e"
     foreground = "#eeeeee"
 
 [base16_critical]
     msg_urgency = critical
-    background = "#ffff66"
+    background = "#DAFD50"
     foreground = "#eeeeee"
 # End Flavours
 
