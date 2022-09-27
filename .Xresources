@@ -1,23 +1,23 @@
 ! Start flavours
-! Base16 Bright Circles
+! Base16 dc-dark-leaf
 ! Scheme: @duanecummins
 
-#define base00 #25252f
-#define base01 #454348
-#define base02 #656160
-#define base03 #847f79
-#define base04 #a49d92
+#define base00 #24262e
+#define base01 #454751
+#define base02 #666774
+#define base03 #878897
+#define base04 #a8a9b9
 #define base05 #eeeeee
-#define base06 #ccc5b7
-#define base07 #c3bbaa
-#define base08 #c46b3c
-#define base09 #dc7244
-#define base0A #60837c
-#define base0B #df8746
-#define base0C #937b73
-#define base0D #957064
-#define base0E #dc4b4c
-#define base0F #aa6845
+#define base06 #d1d1e1
+#define base07 #cacadc
+#define base08 #DAFD50
+#define base09 #767692
+#define base0A #FFA263
+#define base0B #828C89
+#define base0C #C1B28E
+#define base0D #3083DC
+#define base0E #CD3F45
+#define base0F #7351FE
 
 *foreground:   base05
 #ifdef background_opacity
