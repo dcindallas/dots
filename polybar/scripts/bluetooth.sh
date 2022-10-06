@@ -5,9 +5,9 @@ then
 else
   if [ $(echo info | bluetoothctl | grep 'Device' | wc -c) -eq 0 ]
   then
-    echo "%{F#95C085}"
+    echo "%{F#95C085}"
   fi
 #connected
-  echo "%{F#0D6678}"
+  echo "%{F#3083DC}"
 fi
 

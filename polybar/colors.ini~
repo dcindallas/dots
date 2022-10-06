@@ -1,9 +1,9 @@
 ;; _-_-_-_-_-_-_- Color File For Polybar From xresouces _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [color]
-background = #DDD5C7
-foreground = #202026
+background = #141414
 
+foreground = ${xrdb:foreground}
 base01= ${xrdb:color10}	
 # black
 base02= ${xrdb:color11}	
@@ -34,3 +34,4 @@ base0E= ${xrdb:color5}
 # bright blue
 base0F= ${xrdb:color14}	
 # bright magenta
+

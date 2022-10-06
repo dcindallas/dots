@@ -25,7 +25,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "SF Mono:style=Medium 11";
+    font:                        "SF Mono:style=Medium 12";
     background:                  @lightbg;
     background-alt:              @lightfg;
     foreground:                  @lightbg;
@@ -75,7 +75,7 @@ inputbar {
     spacing:                     10px;
     padding:                     100px 40px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/dc-rofi/images/g.png", width);
+    background-image:            url("~/.config/rofi/dc-rofi/images/m.png", width);
     text-color:                  @lightfg;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry" ];

@@ -19,7 +19,7 @@ include-file = ~/.config/polybar/modules.ini
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [bar/main]
-monitor = DP1
+monitor = XWAYLAND1
 dpi-x = 96
 dpi-y = 96
 monitor-strict = true
@@ -28,37 +28,41 @@ wm-restack = i3
 bottom = false
 fixed-center = true
 width = 2510
-height = 38
+height = 35
 offset-x = 25
-offset-y = 10
+offset-y = 15
 background = ${color.background}
 foreground = ${color.foreground}
 radius-top = 0
 radius-bottom = 0
-underline-size = 5
+underline-size = 3
 underline-color = ${color.background}
-overline-size = 5
+overline-size = 4
 border-left-size = 1
-border-left-color = ${color.base02}
+border-left-color = ${color.background}
 border-right-size = 1
-border-right-color = ${color.base02}
+border-right-color = ${color.background}
 border-bottom-size = 1
-border-bottom-color = ${color.base02}
+border-bottom-color = ${color.background}
 border-top-size = 1
-border-top-color = ${color.base02}
-border-color = ${color.background}
+border-top-color = ${color.background}
+; border-color = ${color.background}
 padding-right = 0
-padding-left = 2
-module-margin-left = 1
-module-margin-right = 1
-font-0 = "SF Mono:style=SemiBold:size=10.5;3"
-font-1 = "Iosevka Nerd Font:size=15;5"
-font-2 = "Hack Nerd Font:style=Regular:size=12;4"
+padding-left = 0
+;module-margin-left = 1
+;module-margin-right = 1
+font-0 = "SF Mono:style=Regular:size=11;3"
+font-1 = "Iosevka Nerd Font:size=20;5"
+font-2 = "Hack Nerd Font:style=Regular:size=14;4"
 font-3 = "Material Icons Outlined:style=Regular:size=14;4"
-font-4 = "Dank Mono:style=Regular:size=11;3"
-modules-left =  updates time date weather
+font-4 = "Hack Nerd Font:style=Regular:size=12;4"
+font-5 = "Omega Flight Halftone:style=Regular:size=11;3"
+font-6 = "Class Coder:style=Regular:size=10.5;3"
+
+
+modules-left =  updates RD LD2 time date weather 
 modules-center = ewmh
-modules-right = alsa song prev play next LD memory filesystem
+modules-right = alsa song prev play next LD2  LD
 dim-value = 1.0
 wm-name = i3-wm
 enable-ipc = true
@@ -67,10 +71,10 @@ tray-detached = flase
 tray-maxsize = 14
 tray-offset-x = 0
 tray-offset-y = 0
-tray-padding = 1
+tray-padding = 2
 tray-scale = 1
 tray-foreground = ${color.foreground}
-tray-background = ${color.background}
+tray-background = ${color.base0C}
 tray-underline  = ${color.background}
 tray-overline  = ${color.background}
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

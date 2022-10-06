@@ -1,4 +1,4 @@
-# i3 config file
+# i3 config file (v4)
 
 # Set the mod key one key to own this shit
 set $mod Mod4
@@ -64,8 +64,7 @@ exec ~/.screenlayout/screen.sh
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec --no-startup-id feh --bg-fill  /home/duane/Pictures/wallpaper/wall-green.png
-
+exec_always --no-startup-id feh  --bg-fill /home/duane/Pictures/wallpaper/random/mountain-material.jpg
 # start xsettings or try to here
 # exec --no-startup-id xsettingsd &
 
@@ -100,6 +99,7 @@ exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 12
 
 # exit reload restart or lock
 bindsym $mod+Shift+r restart
+bindsym $mod+Shift+q exec feh --recursive --bg-fill --randomize /home/duane/Pictures/wallpaper/random
 bindsym $mod+Shift+w reload
 bindsym $mod+shift+e exec "i3-nagbar -f DejaVu Sans Mono Book 12 -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
@@ -142,16 +142,16 @@ bindsym F4 exec rofi -show power-menu -theme /home/duane/.config/rofi/dc-rofi/st
 bindsym F8 exec polybar-msg cmd toggle &
 
 # common apps keybinds screenshot etc
-bindsym Print exec maim ~/Pictures/screenshots/$(date +%s).png
-bindsym $alt+c exec gcolor3
-bindsym $alt+x exec xupric
-bindsym XF86HomePage exec google-chrome-beta
-bindsym $alt+f exec nautilus
-bindsym $alt+g exec geany
-bindsym $alt+s exec spotify
-bindsym $alt+p exec pithos
-bindsym XF86Mail exec thunderbird
-bindsym XF86Calculator exec gnome-calculator
+bindsym Print exec maim --delay=5.0 ~/Pictures/screenshots/$(date +%s).png
+bindsym $alt+c exec gcolor3 &
+bindsym $alt+x exec google-chrome-beta &
+bindsym $alt+w exec librewolf &
+bindsym $alt+f exec nautilus &
+bindsym $alt+g exec geany &
+bindsym $alt+s exec spotify &
+bindsym $alt+p exec pithos &
+bindsym $alt+t exec thunderbird &
+bindsym $alt+n exec gnome-calculator &
 
 # kill focused window
 bindsym $mod+q kill
@@ -268,35 +268,35 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 #--------------------------------------------------------------------
 
 # Start flavours
-## Base16 Light Mode
+## Base16 dc-dark-leaf
 # Author: @duanecummins
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #191c20
-set $base01 #2f3236
-set $base02 #56615d
-set $base03 #7f886b
-set $base04 #86817b
-set $base05 #ffffff
-set $base06 #b2b09d
-set $base07 #FFAC1D
-set $base08 #ffff66
-set $base09 #ff6f3d
-set $base0A #ffa263
-set $base0B #917D5A
-set $base0C #94c90f
-set $base0D #3083dc
-set $base0E #Cd3f45
-set $base0F #7351fe
+set $base00 #24262e
+set $base01 #454751
+set $base02 #666774
+set $base03 #878897
+set $base04 #a8a9b9
+set $base05 #eeeeee
+set $base06 #d1d1e1
+set $base07 #cacadc
+set $base08 #DAFD50
+set $base09 #767692
+set $base0A #FFA263
+set $base0B #828C89
+set $base0C #C1B28E
+set $base0D #3083DC
+set $base0E #CD3F45
+set $base0F #7351FE
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base01 $base00 $base05 $base02 $base01
-client.focused_inactive $base01 $base00 $base05 $base00 $base01
-client.unfocused        $base01 $base00 $base05 $base00 $base01
+client.focused          $base00 $base00 $base05 $base03 $base02
+client.focused_inactive $base00 $base00 $base05 $base00 $base02
+client.unfocused        $base00 $base00 $base05 $base00 $base02
 client.urgent           $base08 $base08 $base05 $base08 $base08
-client.placeholder      $base01 $base00 $base05 $base00 $base01
+client.placeholder      $base00 $base00 $base05 $base00 $base02
 client.background       $base07
 
 # i3 Bar  -----------------------------------------------------------

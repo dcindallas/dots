@@ -27,18 +27,13 @@ file = "~/.themes/FlatColor/colors3"
 template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
-hook = "gsettings set org.gnome.desktop.interface gtk-theme FlatColor && gsettings set org.gnome.desktop.interface gtk-theme dummy"
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme FlatColor"
 
 [[item]]
 file = "~/.themes/FlatColor/colors2"
 template = "gtk-flatcolor"
 subtemplate = "gtk-2"
 rewrite = true
-
-[[item]]
-file = "~/.config/alacritty/alacritty.yml"
-template = "alacritty"
-subtemplate = "default-256"
 
 [[item]]
 file = "~/.config/kitty/kitty.conf"
@@ -77,11 +72,7 @@ template = "rofi"
 subtemplate = "colors"
 rewrite = true
 
-# [[items]]
-# file = "~/.config/waybar/colors.css"
-# template = "waybar"
-# rewrite = true
-#
+
 # [[items]]
 # file = "~/.config/beautifuldiscord/style.css"
 # template = "styles"

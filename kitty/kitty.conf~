@@ -50,7 +50,7 @@ window_margin_width 2
 single_window_margin_width -1
 window_padding_width 10
 placement_strategy center
-#window_logo_path /home/duane/Pictures/kitty_logo/logo-1.png
+# window_logo_path /home/duane/Pictures/kitty_logo/logo-1.png
 window_logo_position bottom-right
 window_logo_alpha 0.30
 bell_border_color #d65d0e
@@ -70,51 +70,51 @@ tab_activity_symbol none
 tab_bar_background none
 tab_bar_margin_color none
 
-background_opacity 1.00
+background_opacity 0.90
 # Start flavours
-# Base16 dc-dark-leaf - kitty color config
-# Scheme by @duanecummins
-background #24262e
-foreground #d9d9e6
-selection_background #d9d9e6
-selection_foreground #24262e
-url_color #a8a9b9
-cursor #d9d9e6
-active_border_color #878897
-inactive_border_color #454751
-active_tab_background #24262e
-active_tab_foreground #d9d9e6
-inactive_tab_background #454751
-inactive_tab_foreground #a8a9b9
-tab_bar_background #454751
+# Base16 Green Dream - kitty color config
+# Scheme by @dcindallas
+background #acc6c0
+foreground #162229
+selection_background #162229
+selection_foreground #acc6c0
+url_color #b6ff48
+cursor #162229
+active_border_color #f8674f
+inactive_border_color #c0c5c2
+active_tab_background #acc6c0
+active_tab_foreground #162229
+inactive_tab_background #c0c5c2
+inactive_tab_foreground #b6ff48
+tab_bar_background #c0c5c2
 
 # normal
-color0 #24262e
-color1 #DAFD50
-color2 #828C89
-color3 #FFA263
-color4 #3083DC
-color5 #CD3F45
-color6 #C1B28E
-color7 #d9d9e6
+color0 #acc6c0
+color1 #6c707d
+color2 #f8674f
+color3 #4c665f
+color4 #ffe848
+color5 #488cff
+color6 #a8fa72
+color7 #162229
 
 # bright
-color8 #878897
-color9 #DAFD50
-color10 #828C89
-color11 #FFA263
-color12 #3083DC
-color13 #CD3F45
-color14 #C1B28E
-color15 #cacadc
+color8 #f8674f
+color9 #6c707d
+color10 #f8674f
+color11 #4c665f
+color12 #ffe848
+color13 #488cff
+color14 #a8fa72
+color15 #ff48a6
 
 # extended base16 colors
-color16 #767692
-color17 #7351FE
-color18 #454751
-color19 #666774
-color20 #a8a9b9
-color21 #d1d1e1
+color16 #d5e2df
+color17 #ff48a6
+color18 #c0c5c2
+color19 #959c9c
+color20 #b6ff48
+color21 #488cff
 # End flavours
 
 editor nano

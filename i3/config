@@ -5,7 +5,7 @@ set $mod Mod4
 set $alt Mod1
 
 # Set the font
-font pango: "LiveMono:style=Regular:size=10.5;3"
+font pango: "SF Mono:style=Medium:size=11;3"
 
 # SPECIAL WINDOW ACTIONS -------------------------------------------
 #                                                                  -
@@ -29,7 +29,7 @@ for_window [class=TelegramDesktop] floating enable
 for_window [class=Lxappearance] floating enable
 for_window [class=arandr] floating enable
 for_window [class=feh] floating enable
-for_window [class=sunamu] floating enable
+for_window [class=Evince] floating enable
 for_window [class=Zoom] floating enable
 for_window [class=File-roller] floating enable
 for_window [class=Gpick] floating enable
@@ -57,40 +57,39 @@ smart_borders on
 exec --no-startup-id dex --autostart --environment i3
 
 # shitty screen resolution issues
-exec ~/.screenlayout/screen.sh
+# exec ~/.screenlayout/screen.sh
 
 # start the compositor (transparency, fade, shadows, blur, etc.)
 # exec --no-startup-id picom -b
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec --no-startup-id feh  --bg-fill /home/duane/Pictures/wallpaper/531.jpg
+exec --no-startup-id feh  --bg-fill /home/duane/Pictures/wallpaper/Graphite-nord/wave-dark-nord.png
 # start xsettings or try to here
-# exec --no-startup-id xsettingsd &
-
+#exec --no-startup-id xsettingsd &
 # set colors from xresources
-# exec_always --no-startup-id xrdb -load ~/.Xresources
+#exec_always --no-startup-id xrdb -load ~/.Xresources
 
 # start the bluetooth tray application
-#~exec --no-startup-id blueman-applet
-# exec --no-startup-id blueman-applet &
+#exec --no-startup-id blueman-applet &
 
 # start xfce power manager
-# exec --no-startup-id lxqt-powermanagement &
+#exec --no-startup-id lxqt-powermanagement &
 
 # kde make this work
-# exec --no-startup-id indicator-kdeconnect &
+#exec --no-startup-id kdeconnect-indicator &
 
 # numlock on
 # exec --no-startup-id numlockx &
 
 # auto tiling because its cool
-exec --no-startup-id autotiling-rs &
+exec --no-startup-id autotiling &
 
 # launch the bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-exec --no-startup-id ~/.scripts/lock.sh &
+# exec --no-startup-id ~/.scripts/lock.sh &
+
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 120 "" 'betterlockscreen -l' &
 
 # KEYBINDINGS -------------------------------------------------------
@@ -110,9 +109,9 @@ bindsym $mod+Escape exec betterlockscreen -l
 floating_modifier $mod
 
 # set the gaps and adjust them when you want
-gaps inner 20
-gaps outer 5
-gaps top 50
+gaps inner 10
+gaps outer 0
+gaps top 40
 bindsym $mod+z		gaps outer current plus 5
 bindsym $mod+Shift+z	gaps outer current minus 5
 
@@ -131,7 +130,7 @@ for_window [class="floating_term"] border pixel 2
 #                                                                   -
 #--------------------------------------------------------------------
 
-bindsym F7 exec i3-dmenu-desktop --dmenu="dmenu -i -b -theme /home/duane/.config/rofi/dc-rofi/style-menu.rasi"
+bindsym F7 exec dunstctl history-pop
 bindsym F6 exec dmenu-bluetooth -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi
 bindsym $mod+a exec rofi -show drun -theme /home/duane/.config/rofi/dc-rofi/style-menu.rasi
 bindsym F5 exec networkmanager_dmenu -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi
@@ -145,13 +144,13 @@ bindsym F8 exec polybar-msg cmd toggle &
 bindsym Print exec maim --delay=5.0 ~/Pictures/screenshots/$(date +%s).png
 bindsym $alt+c exec gcolor3 &
 bindsym $alt+x exec google-chrome-beta &
-bindsym XF86HomePage exec librewolf &
+bindsym $alt+w exec librewolf &
 bindsym $alt+f exec nautilus &
 bindsym $alt+g exec geany &
 bindsym $alt+s exec spotify &
 bindsym $alt+p exec pithos &
-bindsym XF86Mail exec thunderbird &
-bindsym XF86Calculator exec gnome-calculator &
+bindsym $alt+t exec thunderbird &
+bindsym $alt+n exec gnome-calculator &
 
 # kill focused window
 bindsym $mod+q kill
@@ -284,7 +283,7 @@ set $base07 #cacadc
 set $base08 #DAFD50
 set $base09 #767692
 set $base0A #FFA263
-set $base0B #828C89
+set $base0B #95C085
 set $base0C #C1B28E
 set $base0D #3083DC
 set $base0E #CD3F45
@@ -292,12 +291,12 @@ set $base0F #7351FE
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base00 $base00 $base05 $base02 $base01
-client.focused_inactive $base00 $base00 $base05 $base00 $base01
-client.unfocused        $base00 $base00 $base05 $base00 $base01
+client.focused          $base00 $base00 $base05 $base0B $base02
+client.focused_inactive $base00 $base00 $base05 $base0B $base02
+client.unfocused        $base00 $base00 $base05 $base0B $base02
 client.urgent           $base08 $base08 $base05 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base01
-client.background       $base07
+client.placeholder      $base00 $base00 $base05 $base0B $base02
+client.background       $base00
 
 # i3 Bar  -----------------------------------------------------------
 #                                                                   -

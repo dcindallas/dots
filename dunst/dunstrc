@@ -31,10 +31,10 @@ height = 100
 
 # Position the notification in the top right corner
 # origin = top-right
-origin = top-right
+origin = top-center
 
 # Offset from the origin
-offset = 52x97
+offset = 0x75
 
 # Scale factor. It is auto-detected if value is 0.
 scale = 0
@@ -158,7 +158,7 @@ markup = no
 #   %n  progress value if set without any extra characters
 #   %%  Literal %
 # Markup is allowed
-format = "%s\n%b"
+format = "%s\n%b\%p"
 
 # Alignment of message text.
 # Possible values are "left", "center" and "right".
@@ -220,7 +220,7 @@ icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/de
 sticky_history = yes
 
 # Maximum amount of notifications kept in history
-history_length = 20
+history_length = 50
 
 ### Misc/Advanced ###
 
@@ -310,6 +310,7 @@ per_monitor_dpi = false
 # Start Flavours
 frame_color = "#666774"
 separator_color = "#eeeeee"
+highlight = "#FFA263"
 
 [base16_low]
     msg_urgency = low

@@ -23,7 +23,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "SF Mono:style=Medium 10";
+    font:                        "Hack Nerd Font Mono 11";
     background:                  @lightbg;
     background-alt:              @lightfg;
     foreground:                  @lightfg;
@@ -62,7 +62,7 @@ mainbox {
 imagebox {
     padding:                     30px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/dc-rofi/images/g2.png", height);
+    background-image:            url("~/.config/rofi/dc-rofi/images/m.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
