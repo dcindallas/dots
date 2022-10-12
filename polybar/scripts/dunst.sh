@@ -5,7 +5,7 @@ then
 else
   if [ $(echo info | dunstctl is-paused | grep "true"| wc -c) -eq 0 ]
   then
-    echo "%{F#95C085}"
+    echo "%{F#7E8772}"
   fi
   
     echo ""

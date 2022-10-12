@@ -1,0 +1,103 @@
+configuration{
+    modi: "run,drun,window";
+    lines: 8;
+    font: "DejaVu Mono Book 11";
+    show-icons: false;
+    icon-theme: "Luv";
+    terminal: "st";
+    drun-display-format: "{name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  window";
+    display-Network: "   Network";
+    sidebar-mode: true;
+}
+
+@theme "archlabs"
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    width: 850px;
+    height: 400px;
+    border: 0px;
+    border-color: #55b5db;
+    background-color: #151718;
+}
+
+mainbox {
+    background-color: #151718;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: #151718;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: #55b5db;
+    padding: 6px;
+    text-color: #151718;
+    border-radius: 1px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: #55b5db;
+    background-color: #151718;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 2;
+    background-color: #151718;
+}
+
+element {
+    padding: 5px;
+    background-color: #151718;
+    text-color: #a3a3a3;
+}
+
+element-icon {
+    size: 28px;
+}
+
+element selected {
+    background-color:  #151718;
+    text-color: #55b5db;
+}
+
+mode-switcher {
+    spacing: 0;
+  }
+
+button {
+    padding: 10px;
+    background-color: #151718;
+    text-color: #55b5db;
+    vertical-align: 0.9;
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: #55b5db;
+  text-color: #151718;
+}

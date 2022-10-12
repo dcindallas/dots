@@ -9,19 +9,19 @@ WIDTH_WIDE=24
 THEME=solarized
 
 # Color Settings of Icon shown in Polybar
-COLOR_DISCONNECTED='#000'       # Device Disconnected
-COLOR_NEWDEVICE='#ff0'          # New Device
-COLOR_BATTERY_90='#fff'         # Battery >= 90
-COLOR_BATTERY_80='#ccc'         # Battery >= 80
-COLOR_BATTERY_70='#aaa'         # Battery >= 70
-COLOR_BATTERY_60='#888'         # Battery >= 60
-COLOR_BATTERY_50='#666'         # Battery >= 50
-COLOR_BATTERY_LOW='#f00'        # Battery <  50
+COLOR_DISCONNECTED='#454751'       # Device Disconnected
+COLOR_NEWDEVICE='#7E8772'          # New Device
+COLOR_BATTERY_90='#7E8772'         # Battery >= 90
+COLOR_BATTERY_80='#7E8772'         # Battery >= 80
+COLOR_BATTERY_70='#FFA263'         # Battery >= 70
+COLOR_BATTERY_60='#FFA263'         # Battery >= 60
+COLOR_BATTERY_50='#CD3F45'         # Battery >= 50
+COLOR_BATTERY_LOW='#CD3F45'        # Battery <  50
 
 # Icons shown in Polybar
-ICON_SMARTPHONE=''
-ICON_TABLET=''
-SEPERATOR='|'
+ICON_SMARTPHONE=''
+ICON_TABLET='淋'
+SEPERATOR=' '
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 

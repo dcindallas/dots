@@ -40,13 +40,13 @@ for_window [instance="Msgcompose" class="thunderbird"] floating enable, resize s
 for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable
 for_window [title="Moving"] floating enable
-for_window [title="^Terminator Preferences$"] floating enable
+for_window [title="Signal"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 # Activate smart borders (always)
 smart_borders on
 
@@ -64,7 +64,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # wallpaper one is all gradient fey for the other
 # --- hsetroot -add '#848484' -add '#1d1f21' -gradient '0'
-exec --no-startup-id feh  --bg-fill /home/duane/Pictures/wallpaper/Graphite-nord/wave-dark-nord.png
+exec --no-startup-id feh  --bg-fill /home/duane/Pictures/wallpaper/flat-black/skyline-geese.jpg
 # start xsettings or try to here
 #exec --no-startup-id xsettingsd &
 # set colors from xresources
@@ -100,7 +100,7 @@ exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 12
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q exec feh --recursive --bg-fill --randomize /home/duane/Pictures/wallpaper/random
 bindsym $mod+Shift+w reload
-bindsym $mod+shift+e exec "i3-nagbar -f DejaVu Sans Mono Book 12 -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+bindsym $mod+shift+e exec "i3-nagbar -f SF Mono Medium 14 -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
 # bindsym $mod+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym $mod+Escape exec betterlockscreen -l
@@ -110,8 +110,8 @@ floating_modifier $mod
 
 # set the gaps and adjust them when you want
 gaps inner 10
-gaps outer 0
-gaps top 40
+gaps outer 5
+gaps top 50
 bindsym $mod+z		gaps outer current plus 5
 bindsym $mod+Shift+z	gaps outer current minus 5
 
@@ -131,10 +131,10 @@ for_window [class="floating_term"] border pixel 2
 #--------------------------------------------------------------------
 
 bindsym F7 exec dunstctl history-pop
-bindsym F6 exec dmenu-bluetooth -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi
-bindsym $mod+a exec rofi -show drun -theme /home/duane/.config/rofi/dc-rofi/style-menu.rasi
-bindsym F5 exec networkmanager_dmenu -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi
-bindsym F4 exec rofi -show power-menu -theme /home/duane/.config/rofi/dc-rofi/style-power.rasi -modi power-menu:rofi-power-menu -width: 300
+bindsym F6 exec dmenu-bluetooth -theme /home/duane/.config/rofi/style-power.rasi
+bindsym $mod+a exec rofi -show drun -theme /home/duane/.config/rofi/style-menu.rasi
+bindsym F5 exec networkmanager_dmenu -theme /home/duane/.config/rofi/style-power.rasi
+bindsym F4 exec rofi -show power-menu -theme /home/duane/.config/rofi/style-power.rasi -modi power-menu:rofi-power-menu -width: 300
 
 # Hide or show (toggle) the poly-bar
 
@@ -283,7 +283,7 @@ set $base07 #cacadc
 set $base08 #DAFD50
 set $base09 #767692
 set $base0A #FFA263
-set $base0B #95C085
+set $base0B #7E8772
 set $base0C #C1B28E
 set $base0D #3083DC
 set $base0E #CD3F45
@@ -291,12 +291,12 @@ set $base0F #7351FE
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base00 $base00 $base05 $base0B $base02
-client.focused_inactive $base00 $base00 $base05 $base0B $base02
-client.unfocused        $base00 $base00 $base05 $base0B $base02
-client.urgent           $base08 $base08 $base05 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base0B $base02
-client.background       $base00
+client.focused          $base02 $base00 $base05 $base00 $base02
+client.focused_inactive $base02 $base00 $base05 $base00 $base02
+client.unfocused        $base02 $base00 $base05 $base00 $base02
+client.urgent           $base08 $base08 $base05 $base0E $base0E
+client.placeholder      $base02 $base00 $base05 $base00 $base02
+client.background       $base02
 
 # i3 Bar  -----------------------------------------------------------
 #                                                                   -
