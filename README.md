@@ -8,5 +8,6 @@ Colors thanks to flavours https://github.com/misterio77/flavours
 
 Highly reccomend using Flatcolor GTK https://github.com/base16-project/base16-gtk-flatcolor
 
-![1664126955](https://user-images.githubusercontent.com/67523002/192330966-f4926c7b-0d44-40ea-a946-8dab9af1ec9a.png)
-![1665066684](https://user-images.githubusercontent.com/67523002/194340904-e4794add-5219-4598-bc6c-accfef8f4425.png)
+![1670387018](https://user-images.githubusercontent.com/67523002/206089201-d50f585e-a059-4162-83e4-7a6bef1e3690.png)
+![1670386766](https://user-images.githubusercontent.com/67523002/206089223-106693f2-5252-4225-8829-6e90eef2f69a.png)
+
