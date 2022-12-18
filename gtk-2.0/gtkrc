@@ -1,0 +1,5 @@
+# Base16 Gruvbox light, hard for gtk2 (https://github.com/dawikur/base16-gtk2)
+# By Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# gruvbox-light-hard (https://github.com/dawikur/base16-gruvbox-scheme)
+
+gtk-color-scheme = "bg_color:#f9f5d7\nfg_color:#504945\nbase_color:#f9f5d7\ntext_color:#504945\nselected_bg_color:#d5c4a1\nselected_fg_color:#504945\ntooltip_bg_color:#f9f5d7\ntooltip_fg_color:#665c54\ntitlebar_bg_color:#f9f5d7\ntitlebar_fg_color:#076678\nmenubar_bg_color:#f9f5d7\nmenubar_fg_color:#076678\ntoolbar_bg_color:#f9f5d7\ntoolbar_fg_color:#b57614\nmenu_bg_color:#f9f5d7\nmenu_fg_color:#504945\npanel_bg_color:#f9f5d7\npanel_fg_color:#79740e\nlink_color:#af3a03"

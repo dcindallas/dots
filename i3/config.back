@@ -34,25 +34,24 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 # run once
 exec --no-startup-id xfsettingsd
 
-# needed for super to launch rofi through ksuperkey, see ~/.xprofile
-bindsym Mod1+F1 exec --no-startup-id rofi_run -r
-
 #############         Bindings           ##################
+
+# launchers
+bindsym Mod1+p exec --no-startup-id rofi_run -r
+bindsym Control+space exec --no-startup-id rofi_run -r
 
 # kill focused window
 bindsym $Mod+Shift+q kill
 bindsym Mod1+q kill
 bindsym Mod1+F4 kill
 
-# launchers
-bindsym Control+space exec --no-startup-id rofi_run -r
-
 # core
-bindsym $Mod+w          exec --no-startup-id exo-open --launch WebBrowser
-bindsym $Mod+f          exec --no-startup-id exo-open --launch FileManager
-bindsym $Mod+t          exec --no-startup-id exo-open --launch TerminalEmulator
-bindsym $Mod+Return     exec --no-startup-id exo-open --launch TerminalEmulator
-bindsym Control+Shift+t exec --no-startup-id exo-open --launch TerminalEmulator
+bindsym $Mod+w             exec --no-startup-id al-browser
+bindsym $Mod+f             exec --no-startup-id al-filemanager
+bindsym $Mod+t             exec --no-startup-id al-terminal
+bindsym $Mod+Return        exec --no-startup-id al-terminal
+bindsym Mod1+Shift+Return  exec --no-startup-id al-terminal
+bindsym Control+Shift+t    exec --no-startup-id al-terminal
 
 # logout script
 bindsym $Mod+x exec --no-startup-id rofi_run -l
@@ -96,7 +95,7 @@ bindsym $mod+Mod2+KP_7 workspace 7
 bindsym $mod+Mod2+KP_8 workspace 8
 
 # switch to next or previous workspace
-bindsym $mod+Mod1+Left workspace prev
+bindsym $mod+Mod1+Left  workspace prev
 bindsym $mod+Mod1+Right workspace next
 
 # move focused container to workspace

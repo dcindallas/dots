@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="system-software-update.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   id="svg2634"
+   version="1.1"
+   viewBox="0 0 12.7 12.7"
+   height="48"
+   width="48">
+  <title
+     id="title3250">Boston Icons</title>
+  <defs
+     id="defs2628" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     units="px"
+     inkscape:window-maximized="1"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="1016"
+     inkscape:window-width="1920"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:guide-bbox="true"
+     showguides="false"
+     showgrid="false"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="20.999023"
+     inkscape:cx="19.851938"
+     inkscape:zoom="11.2"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     borderopacity="1"
+     bordercolor="#00ffed"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       dotted="false"
+       originy="-127.00001"
+       originx="-82.550004"
+       empspacing="4"
+       spacingy="0.26458333"
+       spacingx="0.26458333"
+       id="grid3182"
+       type="xygrid" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide3216"
+       orientation="1,0"
+       position="-4.268358e-06,27.516666" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide3222"
+       orientation="0,1"
+       position="32.279157,-4.1479283e-06" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide3226"
+       orientation="0,1"
+       position="13.229163,0.52915746" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide3238"
+       orientation="1,0"
+       position="6.3499965,7.9374908" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide3246"
+       orientation="0,1"
+       position="13.75833,1.0583241" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide864"
+       orientation="0,1"
+       position="5.8208298,12.170824" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide1121"
+       orientation="1,0"
+       position="12.170828,3.1749884" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide1138"
+       orientation="1,0"
+       position="0.52916162,10.847905" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide1140"
+       orientation="1,0"
+       position="9.2604115,7.1437383" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide1152"
+       orientation="0,1"
+       position="4.7624949,8.466655" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide849"
+       orientation="0,1"
+       position="5.2916616,3.704155" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide837"
+       orientation="0,1"
+       position="5.8208282,6.085405" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide839"
+       orientation="1,0"
+       position="3.4395782,6.085405" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2631">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Boston Icons</dc:title>
+        <cc:license
+           rdf:resource="dribbble.com/chrisdiaz" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:date>2021</dc:date>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>christiandiaz.design [at] gmail [dot] com</dc:identifier>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>GNOME icon Theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>dribbble.com/chrisdiaz | diazchris.deviantart.com</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-82.550003,-157.3)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <g
+       id="g899">
+      <ellipse
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         id="path849"
+         cx="88.900002"
+         cy="163.64999"
+         rx="5.8208332"
+         ry="5.8208227" />
+      <circle
+         style="fill:#00c28e;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         id="path869"
+         cx="88.900002"
+         cy="163.64999"
+         r="5.5562501" />
+      <rect
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         id="rect871"
+         width="0.26458332"
+         height="11.641645"
+         x="88.767708"
+         y="157.82918" />
+      <path
+         id="rect881"
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         d="m 86.518758,158.41125 h 0.26458 v 10.45104 h -0.26458 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect889"
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         d="m 85.248753,159.15207 v 0.26459 h 7.3025 v -0.26459 z m -1.375833,1.85209 v 0.26458 h 10.054161 v -0.26458 z m -0.529172,2.77813 v 0.26459 h 11.1125 v -0.26459 z m 0.529167,2.24894 v 0.26459 h 10.054166 v -0.26459 z m 1.375838,1.85208 v 0.26459 h 7.3025 v -0.26459 z"
+         sodipodi:nodetypes="ccccccccccccccccccccccccc" />
+      <path
+         id="rect883"
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         d="m 91.016668,158.41125 h 0.26458 v 10.45104 h -0.26458 z"
+         sodipodi:nodetypes="ccccc" />
+      <circle
+         style="fill:#ffffff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         id="path887"
+         cx="88.900002"
+         cy="163.64999"
+         r="3.175" />
+      <path
+         style="fill:#06a087;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 88.899999,161.53332 -2.116668,2.11667 h 1.058334 v 1.85208 h 2.116666 v -1.85208 h 1.058334 z"
+         id="path962" />
+      <path
+         id="rect877"
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         d="m 84.402084,159.99875 h 0.264581 v 7.3025 h -0.264581 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect879"
+         style="fill:#079f87;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.11666, 2.11666"
+         d="m 93.133331,159.99875 h 0.264581 v 7.3025 h -0.264581 z"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg4159"
+   version="1.1"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   viewBox="0 0 16 16"
+   sodipodi:docname="font-x-generic.svg">
+  <title
+     id="title815">Boston Icons</title>
+  <defs
+     id="defs4161">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 8 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="16 : 8 : 1"
+       inkscape:persp3d-origin="8 : 5.3333333 : 1"
+       id="perspective4709" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5603">
+      <path
+         style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 61.912499,165.76667 -6.879168,6.87917 6.879168,6.87916 6.879167,-6.87916 z"
+         id="path5605"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#00fff6"
+     borderopacity="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.197802"
+     inkscape:cx="8.5718782"
+     inkscape:cy="4.174369"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4707" />
+    <sodipodi:guide
+       position="8,9"
+       orientation="1,0"
+       id="guide3096"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="12,8"
+       orientation="0,1"
+       id="guide3098"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Boston Icons</dc:title>
+        <cc:license
+           rdf:resource="dribbble.com/chrisdiaz" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>diazchris.deviantart.com | dribbble.com/chrisdiaz</dc:description>
+        <dc:date>2019</dc:date>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>christiandiaz.design [at] gmail [dot] com</dc:identifier>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>GNOME icon Theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       aria-label="Aa"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.33333397px;line-height:1.25;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';letter-spacing:0px;word-spacing:0px;fill:#5f7a8d;fill-opacity:1;stroke:none"
+       id="text827"
+       transform="matrix(0.83824399,0,0,0.83824399,17.995264,1.3114746)">
+      <path
+         style="fill:#556e81;stroke-width:0.83824396"
+         d="M 3.9082031,3.7480469 0,13.439453 h 1.3808594 l 0.8574218,-2.164062 h 4.8222657 l 0.8574219,2.164062 H 9.2988281 L 5.4042969,3.7480469 Z m 0.7421875,1.234375 2.0625,5.2324221 H 2.6015625 Z m 8.6328124,1.265625 c -1.147835,0 -2.04915,0.377513 -2.804687,1.1621093 l 0.509765,0.7558594 c 0.624771,-0.6828894 1.307676,-0.9746093 2.150391,-0.9746094 1.017069,0 1.771484,0.538858 1.771484,1.46875 V 9.9238281 C 14.343503,9.2845275 13.544889,8.9785156 12.585938,8.9785156 c -1.191425,0 -2.441407,0.726824 -2.441407,2.3105464 0,1.525605 1.264512,2.324219 2.441407,2.324219 0.944421,0 1.757565,-0.333356 2.324218,-0.972656 v 0.798828 H 16 V 8.6152344 C 16,6.9152755 14.779748,6.2480469 13.283203,6.2480469 Z m -0.291015,3.515625 c 0.755537,0 1.496611,0.2907691 1.917968,0.8574221 v 1.335937 c -0.421357,0.581182 -1.162431,0.873047 -1.917968,0.873047 -1.031599,0 -1.744141,-0.640183 -1.744141,-1.541016 0,-0.886303 0.712542,-1.5253901 1.744141,-1.5253901 z"
+         transform="matrix(1.1929701,0,0,1.1929701,-21.467812,-1.56455)"
+         id="path847"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

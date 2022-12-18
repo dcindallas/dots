@@ -1,0 +1,125 @@
+#import:
+#  - /home/duane/.config/alacritty/alacritty.yml
+TERM: alacritty
+live_config_reload: true
+shell:
+  program: /usr/bin/fish
+# window settings
+dynamic_title: true
+
+# window:
+padding:
+        x: 40
+        y: 40
+window:
+        opacity: 0.70
+
+dynamic_padding: true
+
+# animations
+animation: EaseOutExpo
+duration: 1
+
+# Visual bell animation color.
+color: '0xfac03b'
+shape: Beam
+blinking: Always
+
+# GTK Settings
+gtk_theme_variant: Dark
+
+#scrolling:
+history: 50000
+# Scrolling distance multiplier.
+multiplier: 3
+
+# Transparent cell backgrounds
+transparent_background_colors: true
+
+# Bell Command
+  #
+  # This program is executed whenever the bell is rung.
+  #
+  # When set to `command: None`, no command will be executed.
+  #
+  # Example:
+  #   command:
+  #     program: notify-send
+  #     args: ["Hello, World!"]
+  #
+command:
+program: notify-send
+args: ["Check Terminal"]
+
+# When set to `true`, selected text will be copied to the primary clipboard.
+save_to_clipboard: true
+
+##### Take care of the terminal fonts #####
+
+font:
+  normal:
+    family: "SF Mono"
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: "SF Mono"
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: "SF Mono"
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: "SF Mono"
+    style: Bold Italic
+
+  # Point size
+  size: 10
+
+# Start flavours
+# Base16 dc-dark-leaf 256 - alacritty color config
+# @duanecummins
+colors:
+  # Default colors
+  primary:
+    background: '0x1F1F28'
+    foreground: '0xeeeeee'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x1F1F28'
+    cursor: '0xeeeeee'
+
+  # Normal colors
+  normal:
+    black:   '0x1F1F28'
+    red:     '0xDAFD50'
+    green:   '0x7E8772'
+    yellow:  '0xFFA263'
+    blue:    '0x3083DC'
+    magenta: '0xCD3F45'
+    cyan:    '0xC1B28E'
+    white:   '0xeeeeee'
+
+  # Bright colors
+  bright:
+    black:   '0x878897'
+    red:     '0xDAFD50'
+    green:   '0x7E8772'
+    yellow:  '0xFFA263'
+    blue:    '0x3083DC'
+    magenta: '0xCD3F45'
+    cyan:    '0xC1B28E'
+    white:   '0xcacadc'
+
+  indexed_colors:
+    - { index: 16, color: '0x767692' }
+    - { index: 17, color: '0x7351FE' }
+    - { index: 18, color: '0x223249' }
+    - { index: 19, color: '0x2A2A37' }
+    - { index: 20, color: '0xa8a9b9' }
+    - { index: 21, color: '0xd1d1e1' }
+# End flavours

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg4159"
+   version="1.1"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   viewBox="0 0 16 16"
+   sodipodi:docname="watchflower-symbolic.svg">
+  <title
+     id="title815">Boston Icons</title>
+  <defs
+     id="defs4161">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 8 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="16 : 8 : 1"
+       inkscape:persp3d-origin="8 : 5.3333333 : 1"
+       id="perspective4709" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#00fff6"
+     borderopacity="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="31.392433"
+     inkscape:cx="5.3879942"
+     inkscape:cy="7.49309"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4707" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Boston Icons</dc:title>
+        <cc:license
+           rdf:resource="https://dribbble.com/chrisdiaz" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>diazchris.deviantart.com | dribbble.com/chrisdiaz</dc:description>
+        <dc:date>2019</dc:date>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>christiandiaz.design [at] gmail [dot] com</dc:identifier>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>GNOME icon Theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#252627;stroke:none;stroke-width:0.09086371px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 8.003993,2.910797 c 0,0 -1.292515,1.360462 -2.336193,2.945084 C 3.97667,5.009512 2.18872,4.480148 2.18872,4.480148 c 0,0 -0.52361,2.1743 -0.5734,4.24007 C 0.68393,8.742408 0,8.812678 0,8.812678 c 0,0 1.07522,4.686739 2.71207,5.723527 1.60013,1.013526 5.105638,0.05651 5.263173,0.01278 0.0022,4.54e-4 0.0252,0.0055 0.0252,0.0055 0,0 0.0042,-0.01316 0.0044,-0.01384 3e-6,-4e-6 8.81e-4,-9.09e-4 8.9e-4,-9.09e-4 0.05501,0.01544 3.657797,1.021248 5.282163,-0.0076 1.63685,-1.036762 2.712066,-5.723501 2.712066,-5.723501 0,0 -0.684192,-0.07029 -1.615848,-0.09246 -0.04556,-2.066161 -0.564881,-4.242199 -0.564881,-4.242199 0,0 -1.792235,0.526792 -3.486363,1.371119 C 9.290458,4.265145 8.003955,2.910836 8.003955,2.910836 Z"
+       id="path856-9"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

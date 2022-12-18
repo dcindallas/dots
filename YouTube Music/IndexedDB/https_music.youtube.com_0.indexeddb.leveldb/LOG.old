@@ -1,0 +1,12 @@
+2022/12/17-15:06:02.134 b8bd0 Reusing MANIFEST /home/duane/.config/YouTube Music/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/17-15:06:02.134 b8bd0 Recovering log #134
+2022/12/17-15:06:02.136 b8bd0 Reusing old log /home/duane/.config/YouTube Music/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/000134.log 
+2022/12/18-08:36:09.821 db526 Level-0 table #139: started
+2022/12/18-08:36:09.852 db526 Level-0 table #139: 1065420 bytes OK
+2022/12/18-08:36:09.860 db526 Delete type=0 #134
+2022/12/18-08:40:52.595 db64e Compacting 1@1 + 1@2 files
+2022/12/18-08:40:52.607 db64e Generated table #140@1: 1917 keys, 63493 bytes
+2022/12/18-08:40:52.607 db64e Compacted 1@1 + 1@2 files => 63493 bytes
+2022/12/18-08:40:52.611 db64e compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/12/18-08:40:52.611 db64e Delete type=2 #136
+2022/12/18-08:40:52.612 db64e Delete type=2 #139

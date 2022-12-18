@@ -50,6 +50,9 @@ window {
     border-radius:               3px;
     cursor:                      "default";
     background-color:            @background;
+    border-color:            	 @red;
+    border: 					 1px;
+
 }
 
 /*****----- Main Box -----*****/

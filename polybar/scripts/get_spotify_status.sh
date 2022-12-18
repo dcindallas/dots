@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The name of polybar bar which houses the main spotify module and the control modules.
-PARENT_BAR="top"
+PARENT_BAR="main"
 PARENT_BAR_PID=$(pgrep -a "polybar" | grep "$PARENT_BAR" | cut -d" " -f1)
 
 # Set the source audio player here.
@@ -14,13 +14,13 @@ PLAYER="playerctld"
 # Format of the information displayed
 # Eg. {{ artist }} - {{ album }} - {{ title }}
 # See more attributes here: https://github.com/altdesktop/playerctl/#printing-properties-and-metadata
-FORMAT="{{ title }} -  {{ artist }} - {{ album }}"
+FORMAT="{{ title }} by  {{ artist }}"
 
 # Sends $2 as message to all polybar PIDs that are part of $1
 update_hooks() {
     while IFS= read -r id
     do
-        polybar-msg -p "$id" hook spotify-play-pause $2 1>/dev/null 2>&1
+        polybar-msg -p "$id" hook -a play-pause $2 1>/dev/null 2>&1
     done < <(echo "$1")
 }
 

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   id="svg4159"
+   version="1.1"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   viewBox="0 0 16 16"
+   sodipodi:docname="computer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title815">Boston Icons</title>
+  <defs
+     id="defs4161">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 8 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="16 : 8 : 1"
+       inkscape:persp3d-origin="8 : 5.3333333 : 1"
+       id="perspective4709" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5603">
+      <path
+         style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 61.912499,165.76667 -6.879168,6.87917 6.879168,6.87916 6.879167,-6.87916 z"
+         id="path5605"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#00fff6"
+     borderopacity="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="44.395604"
+     inkscape:cx="6.8362624"
+     inkscape:cy="8.7959159"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4707" />
+    <sodipodi:guide
+       position="7,12"
+       orientation="0,1"
+       id="guide835"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="8,3"
+       orientation="0,1"
+       id="guide837"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5,8"
+       orientation="1,0"
+       id="guide839"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11,8"
+       orientation="1,0"
+       id="guide841"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Boston Icons</dc:title>
+        <cc:license
+           rdf:resource="dribbble.com/chrisdiaz" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:date>2021</dc:date>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>christiandiaz.design [at] gmail [dot] com</dc:identifier>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>GNOME icon Theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>dribbble.com/chrisdiaz | diazchris.deviantart.com</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       id="g1397">
+      <path
+         id="rect937"
+         style="fill:#373b43;stroke-width:2;stroke-linejoin:round"
+         d="m 0,1 v 12 h 6 v 2 H 4 v 1 h 8 v -1 h -2 v -2 h 6 V 1 Z" />
+      <rect
+         style="fill:#252627;stroke-width:2;stroke-linejoin:round"
+         id="rect1113"
+         width="4"
+         height="1"
+         x="6"
+         y="13"
+         ry="1.92356e-05" />
+      <rect
+         style="fill:#2d8cff;stroke-width:2;stroke-linejoin:round"
+         id="rect1137"
+         width="14"
+         height="9"
+         x="1"
+         y="2"
+         ry="1.92356e-05" />
+    </g>
+  </g>
+</svg>

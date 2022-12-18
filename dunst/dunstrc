@@ -27,7 +27,7 @@ follow = none
 width = 400
 
 # The maximum height of a single notification, excluding the.
-height = 100
+height = 120
 
 # Position the notification in the top right corner
 # origin = top-right
@@ -75,7 +75,7 @@ transparency = 0
 # notifications.
 # Set to 0 to disable.
 # If gap_size is greater than 0, this setting will be ignored.
-separator_height = 0
+separator_height = 10
 
 # Padding between text and separator.
 padding = 20
@@ -88,7 +88,7 @@ text_icon_padding = 20
 
 # Defines width in pixels of frame around the notification window.
 # Set to 0 to disable.
-frame_width = 1
+frame_width = 0
 
 # Defines color of the frame around the notification window.
 
@@ -118,7 +118,7 @@ idle_threshold = 120
 
 ### Text ###
 
-font = "SF Pro Display 12"
+font = "SF Mono 10"
 
 # The spacing between lines.  If the height is smaller than the
 # font height, it will get raised to the font height.
@@ -244,7 +244,7 @@ class = Dunst
 # corners.
 # The radius will be automatically lowered if it exceeds half of the
 # notification height to avoid clipping text and/or icons.
-corner_radius = 0
+corner_radius = 2
 
 # Ignore the dbus closeNotification message.
 # Useful to enforce the timeout set by dunst configuration. Without this
@@ -308,23 +308,23 @@ per_monitor_dpi = false
 #--------------------------------------------------------------------
 
 # Start Flavours
-frame_color = "#666774"
+frame_color = "#2A2A37"
 separator_color = "#eeeeee"
 highlight = "#FFA263"
 
 [base16_low]
     msg_urgency = low
-    background = "#24262e"
+    background = "#2A2A37"
     foreground = "#eeeeee"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#24262e"
+    background = "#2A2A37"
     foreground = "#eeeeee"
 
 [base16_critical]
     msg_urgency = critical
-    background = "#DAFD50"
+    background = "#CD3F45"
     foreground = "#eeeeee"
 # End Flavours
 

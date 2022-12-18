@@ -1,0 +1,117 @@
+{
+	"window-size": {
+		"width": 661,
+		"height": 741
+	},
+	"url": "https://music.youtube.com/watch?v=5-JUkdhZA1w&list=RDAMVMYQgNg1UXG7Q&index=0",
+	"options": {
+		"tray": false,
+		"appVisible": true,
+		"autoUpdates": true,
+		"hideMenu": false,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"restartOnConfigChanges": true,
+		"trayClickPlayPause": false,
+		"autoResetAppCache": false,
+		"resumeOnStart": true,
+		"proxy": "",
+		"themes": [
+			"/home/duane/Documents/theme-files-full-i3-theme/youtube-music/dark-leaf.css"
+		]
+	},
+	"plugins": {
+		"navigation": {
+			"enabled": true
+		},
+		"adblocker": {
+			"enabled": false,
+			"cache": true,
+			"additionalBlockLists": []
+		},
+		"shortcuts": {
+			"enabled": false,
+			"overrideMediaKeys": false
+		},
+		"downloader": {
+			"enabled": true,
+			"ffmpegArgs": [],
+			"preset": "mp3",
+			"downloadFolder": "/home/duane/Downloads"
+		},
+		"last-fm": {
+			"enabled": false,
+			"api_root": "http://ws.audioscrobbler.com/2.0/",
+			"api_key": "04d76faaac8726e60988e14c105d421a",
+			"secret": "a5d2a36fdf64819290f6982481eaffa2"
+		},
+		"discord": {
+			"enabled": false,
+			"activityTimoutEnabled": true,
+			"activityTimoutTime": 600000,
+			"listenAlong": true
+		},
+		"notifications": {
+			"enabled": true,
+			"unpauseNotification": false,
+			"urgency": "normal",
+			"interactive": false
+		},
+		"precise-volume": {
+			"enabled": false,
+			"steps": 1,
+			"arrowsShortcut": true,
+			"globalShortcuts": {
+				"volumeUp": "",
+				"volumeDown": ""
+			}
+		},
+		"sponsorblock": {
+			"enabled": false,
+			"apiURL": "https://sponsor.ajay.app",
+			"categories": [
+				"sponsor",
+				"intro",
+				"outro",
+				"interaction",
+				"selfpromo",
+				"music_offtopic"
+			]
+		},
+		"video-toggle": {
+			"enabled": false,
+			"mode": "custom",
+			"forceHide": false
+		},
+		"picture-in-picture": {
+			"enabled": false,
+			"alwaysOnTop": true,
+			"savePosition": true,
+			"saveSize": false,
+			"hotkey": "P"
+		},
+		"blur-nav-bar": {
+			"enabled": false
+		},
+		"in-app-menu": {
+			"enabled": false,
+			"hideIcon": true
+		},
+		"skip-silences": {
+			"enabled": false
+		},
+		"audio-compressor": {
+			"enabled": false
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "1.18.0"
+		}
+	},
+	"window-maximized": false,
+	"window-position": {
+		"x": 16,
+		"y": 389
+	}
+}

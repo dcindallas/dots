@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg2634"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="computer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title3250">Boston Icons</title>
+  <defs
+     id="defs2628" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#00ffed"
+     borderopacity="1"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="8.0803571"
+     inkscape:cy="38.348214"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3182"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empspacing="4"
+       originx="-82.550004"
+       originy="-127.00001"
+       dotted="false" />
+    <sodipodi:guide
+       position="-4.268358e-06,27.516666"
+       orientation="1,0"
+       id="guide3216"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="32.279157,-4.1479283e-06"
+       orientation="0,1"
+       id="guide3222"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="13.229163,0.52915746"
+       orientation="0,1"
+       id="guide3226"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="6.3499965,7.9374908"
+       orientation="1,0"
+       id="guide3238"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="13.75833,1.0583241"
+       orientation="0,1"
+       id="guide3246"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.8208298,12.170824"
+       orientation="0,1"
+       id="guide864"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="12.170828,3.1749884"
+       orientation="1,0"
+       id="guide1121"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.52916162,10.847905"
+       orientation="1,0"
+       id="guide1138"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="9.2604115,7.1437383"
+       orientation="1,0"
+       id="guide1140"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="4.7624949,8.466655"
+       orientation="0,1"
+       id="guide1152"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.2916616,3.704155"
+       orientation="0,1"
+       id="guide849"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.8208282,6.085405"
+       orientation="0,1"
+       id="guide837"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="3.4395782,6.085405"
+       orientation="1,0"
+       id="guide839"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2631">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Boston Icons</dc:title>
+        <cc:license
+           rdf:resource="dribbble.com/chrisdiaz" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:date>2021</dc:date>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Christian Díaz</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>christiandiaz.design [at] gmail [dot] com</dc:identifier>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>GNOME icon Theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>dribbble.com/chrisdiaz | diazchris.deviantart.com</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-82.550003,-157.3)">
+    <g
+       id="g1886">
+      <rect
+         style="fill:#ffffff;stroke-width:0.529167;stroke-linejoin:round"
+         id="rect1614"
+         width="8.4666662"
+         height="0.2646043"
+         x="84.666664"
+         y="168.67708" />
+      <path
+         id="rect1117"
+         style="fill:#373b43;stroke-width:0.529167;stroke-linejoin:round"
+         d="m 83.079168,157.82916 v 7.9375 h 4.7625 v 1.32292 h -1.322917 v 0.52917 h 4.7625 v -0.52917 h -1.322917 v -1.32292 h 4.7625 v -7.9375 z" />
+      <path
+         id="rect997"
+         style="fill:#373b43;stroke-width:2;stroke-linejoin:round"
+         d="M 8 43 L 8 44 L 8 46 L 40 46 L 40 44 L 40 43 L 38 43 L 38 44 L 37 44 L 37 43 L 35 43 L 35 44 L 34 44 L 34 43 L 32 43 L 32 44 L 31 44 L 31 43 L 29 43 L 29 44 L 28 44 L 28 43 L 20 43 L 20 44 L 19 44 L 19 43 L 17 43 L 17 44 L 16 44 L 16 43 L 14 43 L 14 44 L 13 44 L 13 43 L 11 43 L 11 44 L 10 44 L 10 43 L 8 43 z "
+         transform="matrix(0.26458333,0,0,0.26458333,82.550003,157.3)" />
+      <rect
+         style="fill:#2d8cff;stroke-width:0.529167;stroke-linejoin:round"
+         id="rect1409"
+         width="11.1125"
+         height="7.1437497"
+         x="83.34375"
+         y="158.09373" />
+      <rect
+         style="fill:#252627;stroke-width:0.529167;stroke-linejoin:round"
+         id="rect1433"
+         width="2.1166666"
+         height="0.26455995"
+         x="87.841667"
+         y="165.76668" />
+    </g>
+  </g>
+</svg>

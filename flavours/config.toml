@@ -41,18 +41,17 @@ template = "kitty"
 subtemplate = "default-256"
 
 [[item]]
+file = "~/.config/alacritty/alacritty.yml"
+template = "alacritty"
+subtemplate = "default-256"
+
+[[item]]
 file = "~/.Xresources"
 template = "xresources"
 hook = "xrdb load ~/.Xresources"
 start= "! Start flavours"
 end = "! End flavours"
 
-[[items]]
-file = "~/.config/i3/i3-status-rust/config.toml"
-template = "i3status-rust"
-subtemplate = "default"
-hook = "i3 reload"
-#light = false
 
 [[item]]
 file = "~/.config/dunst/dunstrc"

@@ -1,0 +1,610 @@
+
+ 12 May 2022 // v 2.0
+ --------------------
+
+ # Revamped folders. Design improvements for better visual integration on GNOME 42 and libadwaita.
+
+ 1. Tested on GNOME 42, 42.1 & 43 Alpha
+ 2. Revised data, metadata, documentation
+ 3. Some SVG cleanup
+ 4. Revamped folders, places and desktop icons
+ 5. Removed activities folder
+ 6. Filetype icons
+	Extended Gzip support
+	Inode directory
+	Snap packages
+	GIF image
+	RAW image
+	XPI (Firefox themes)
+	CBR comic files
+	Revamped video
+		audio
+		eBook
+	VDI & VBOX images
+	Revised addressbook
+		Winhelp
+		Office drawing
+		BMP image
+		Changelog
+		AppImage
+ 7. App icons
+	Revamped system software install
+		Audacity
+	Revised Calibre viewer
+		Sound Converter
+		Bleachbit
+	Chrome Canary & Dev
+ 8. Action icons
+ 	Revamped document-open
+ 9. Symbolic icons
+	Status - image generic
+	Telegram Desktop
+	Tor Browser
+	Spotify (Flatpak support)
+	Revised edit-paste
+		Epsxe
+		DOSBox
+		Bleachbit
+		Brave browser / Brave Beta
+		Drive-harddisk
+		Drive-harddisk-usb
+		Drive-harddisk-solidstate
+		Drive-multidisk
+		Drive-removable-media
+		Media-zip
+		Emblem-photos
+		System-software-install
+	Revamped inode directory
+		folder
+		folder pictures
+		folder videos
+		folder games
+		folder-visiting
+		folder-open
+		folder-drag
+		Pidgin
+		VirtualBox
+	Removed Transmission
+ 10. Devices icons
+ 	Revised drive-harddisk
+ 		Drive-harddisk-solidstate
+ 		Drive-harddisk-system
+ 		Drive-harddisk-usb
+ 		Drive-optical
+ 		Drive-multidisk
+ 		media-removable
+ 		128px phone
+ 11. Legacy icons
+ 	Removed help-about
+ 12. Inherits Arc icons
+ 13. Removed install.sh (K.I.S.S.)
+
+ 30 Sep 2021 // v 1.0
+ --------------------
+
+ # Design improvements, additions, optimization, corrections. Maintenance.
+ # Styled in The Lion Herder studio.
+
+ 1. Tested on GNOME 40.4 & 41 RC
+ 2. Revised folders
+	Composition and color improvements
+	Explicit blue folder added
+	New optional folder style: Cardboard
+	Adaptations for Cardboard
+ 3. Updated documentation
+ 4. Filetype icons
+	RDF files
+	Gradle
+	New chagelog
+	New compressed files: ZIP, RAR, 7zip, tar.gz, tar.xz, tar.bz2
+	Adobe Flash files
+	.UNX
+	Renewed office icons
+	Renewed PDF
+	Java class
+	Empty file / format
+	Google Drive shortcuts
+	X.509 Certificate (PEM format)
+	Core / program crash data
+ 5. App icons
+	Spotify improved
+	System software update improved
+	Minigalaxy (& symbolic)
+	Pavucontrol (multimedia volume control)
+	Soundconverter (& symbolic)
+	Revised DOSBox (& symbolic)
+	BleachBit (& symbolic)
+ 6. Device icons
+	Phone
+	Media removable
+	Renewed drive hard disk
+	Renewed hard disk USB / removable drive
+	Media flash
+	Revised 16px drives
+	Hard drives revised
+	Drive optical
+	Drive multidisk
+	Audio card
+	Computer
+	System drive
+ 7. Legacy icons
+	Document open
+	Folder new
+	Folder visiting
+	Dialog warning
+	Dialog error
+	Dialog information
+	Help about (& symbolic)
+	Revised dialog question
+	Image missing
+ 8. Symbolic icons
+	Min (web browser) / minbrowser.org
+	DOSBox Staging
+	New Audacity
+	Smartphone
+	GSConnect
+	Raspberry Pi Imager
+	Office calendar
+	Nyxt browser (https://nyxt.atlas.engineer/)
+ 9. Renewed desktop
+ 10. Fixed size warnings when launching apps on command line 
+	(thanks to Michael Alexandre Salim || michel@michel-slm.name ||)
+ 11. Improved size rules on index
+ 12. KDE activities folder
+ 13. Renewed image loading
+ 14. Initial Raspberry Pi OS desktop compatibility
+ 15. Start here icon
+
+ =====================================================================
+
+ 2 Sep 2021 // v 0.9.1
+ ---------------------
+
+ 1. Tested on GNOME 40.4 & 41 beta
+ 2. Updated critical data
+
+ =====================================================================
+
+ 10 Feb 2021 // v 0.9
+ --------------------
+
+ # Various improvements and additions, better coherence. 
+ # Designed with love in The Castles. 
+
+ 1. Tested on GNOME 3.38.3
+ 2. Design and file improvements
+ 3. Filetype icons
+	Geographic GML files
+	Geographic KML files
+	RPM Spec
+	Python 3
+	Translations (gettext) extended
+	XSL
+	Redesigned certificates
+	Glade projects
+	Lua code
+	Redesigned spreadsheet
+	Redesigned tables
+	RAM files (RealMedia, emulators)
+	Google Docs & Google Drive support
+	MS DOS program
+	Redesigned address book
+	MS Windows regedit
+	MS Windows help
+ 4. App icons
+	48px & 16px system software update
+	Audacity
+	ePSXe & symbolic (/usr/share/applications/epsxe.desktop -> change line to "Icon=epsxe")
+	Redesigned Calibre e-Book Editor
+ 5. Symbolic icons
+	Removed Color Picker (gColor 3). New one provided by the app
+ 6. Legacy icons
+	Dialog question
+
+ =====================================================================
+
+ 04 Aug 2020 // v 0.8
+ --------------------
+
+ # Corrections, improvements and additions. Better eBook,symbolics and code files support.
+
+ 1. Corrections
+ 2. App icons
+	Calibre e-Book Editor
+	Calibre e-Book Viewer
+	Calibre LRF Viewer
+	Removed PDF Arranger (new icon provided by the own app since v. 1.6)
+ 3. Filetype icons
+	RAW disk images
+	LRF Sony eBook
+	Topaz (TPZ) eBook
+	AZW3 (MOBI8) eBook
+	Cursor
+	Renewed office addressbook
+	Readme text
+	Install text
+	Java code
+	Perl code
+	C# code
+	Haskell code
+	Go code
+	SQL code
+	Ruby code
+	Rust code
+	SCSS code
+	Sass code
+	Scala code
+	Kotlin code
+	(La)TeX code / text
+	New partial download
+ 4. Symbolic icons
+	Removed Firefox (compatibility provided by the own app, tested since v. 78.0.1)
+	Phone (Android / compatible smartphones)
+	Apple iPhone
+	Calibre
+	Calibre e-Book Viewer
+	New PDF Arranger
+	Image generic
+	Video generic
+	Text generic
+	Office document
+	Office drawing
+	Office presentation
+	Office spredsheet
+	Calendar
+	Notifications
+	Notifications disabled
+	Optical drive improved design
+	Media removable
+	Legacy folder compatibility
+	Emblems folder compatibility
+		Emblem shared
+		Emblem music
+		Emblem photos
+		Emblem documents
+		Emblem videos
+ 5. Optional white folder
+ 6. Updated documentation & lowercase nomenclature
+
+ =====================================================================
+
+ 07 May 2020 // v 0.7
+ --------------------
+
+ # Corrections, improvements and additions focused on production.
+
+ 1. Tested on GNOME 3.36.1
+ 2. Updated data and documentation
+ 3. App icons
+	Revised Hardinfo
+	New compatibility with PDF Arranger
+	lstopo (hwloc) prepared compatibility
+	48px & 16px: 
+		Checkers (FUILD - fltk game example)
+		Sudoku (FUILD - fltk game example)
+		Block Attack! (FUILD - fltk game example)
+		DOSBox
+		GRUB Customizer
+		PDF Arranger / PDF Shuffler
+		CUPS
+		Hardinfo
+		Xsensors
+		Snes9x
+		System-software-install
+		FLUID
+ 4. Symbolic icons
+	New Firefox
+	New compatibility with Inkscape
+	Pidgin
+ 5. Filetype icons:
+	Revised Model STL
+	Gcode (3D printers)
+	Pitivi/GES video project
+	Kdenlive project
+	iptables rules files
+	Audacity projects
+	Authors
+	Man pages
+	Shell script
+	Executable script
+	Inode directory
+	Audio playlists (m3u, pls)
+	Extended support for Virualbox files
+ 6. Legacy icons
+	All user places
+ 7. 16px folder saved search
+ 8. Places
+	Folder open
+
+ =====================================================================
+
+ 11 Oct 2019 // v 0.6
+ --------------------
+
+ # Corrections and improvements.
+
+ 1. Tested on GNOME 3.34
+ 2. Preparing KDE and XFCE extended compatibility
+ 3. Revised index file
+ 4. Filetypes icons:
+	Revised package repository
+	Low hierarchy for torrent files (waste, less used & important, existence of magnet links)
+	GTK UI -builder- (Glade)
+	Qt UI -builder- (Qt Designer)
+	Application X Object (.o)
+	Virtual machine drives (QEMU, VirtualBox, VMWare)
+	Revised Apple disk image
+	Revised 16px application x trash
+ 5. Symbolic icons
+	Firefox Beta
+	Firefox Nightly
+	New Qt Designer
+	New Qt Linguist
+	New PDF Shuffler / PDF Arranger
+	Revised LibreOffice Writer / Abiword
+	Revised folder documents
+	Revised folder templates
+	Revised system software updates
+	Revised Gpick
+	Snes9x
+	Brave web browser
+ 6. App icons
+	CUPS
+ 7. Legacy icons (fallback use):
+	Go home
+	Network wired
+ 8. Revised devices icons
+ 9. New 16px user home icon place
+ 10. Revised 16px folders:
+	Download
+	Music
+	Public Share
+	Documents
+	Templates
+	Trash & trash full
+ 11. Optimized some icon files
+
+ =====================================================================
+
+
+ 06 Aug 2019 // v 0.5
+ --------------------
+
+ # Design adjustment: colors, hierarchy, metaphors and coherence, branding. More compatibilities.
+
+ 1. Adjusted color palette for better contrast
+ 2. Better SVG optimization
+ 3. Basic compatibility with KDE desktop using Breeze as background icons
+ 4. Symbolic icons
+	Spotify compatibility link
+	Deleted Lollypop (provided by own app)
+	Gcolor3 Color Picker
+	Revised VirtualBox
+ 5. Filetypes icons
+	Corrected 48px & 16px office document
+	Revised Microsoft Publisher
+	YAML
+	16px LibreOffice extension
+	Redesigned AppImage
+	New design for professional drawing files
+	Corel Draw
+	Adobe Photoshop
+	Krita
+	OpenRaster format
+	EPS format
+	16px Qt Linguist translation
+	Modelica
+	3D model (.stl)
+	AutoCAD (.dwg)
+	CAD interoperability (.dxf)
+	OpenSSL PEM
+	PKCS#10 (.p10)
+	Office drawing document (compatibility)
+	Office drawing document template (compatibility)
+	Office text document template (compatibility)
+	Office spreadsheet document template (compatibility)
+	Office presentation template (compatibility)
+	Microsoft Visio (compatibility)
+	HTML template
+	Corrected 16px Apple disk image
+	Corrected 16px SVG and office drawing
+	New HTML
+	Tables / CSV
+	Bitmap image
+ 6. App icons
+	Revised PDF Shuffler / PDF Arranger
+	Block Attack! (FUILD - fltk game example)
+	Checkers (FUILD - fltk game example)
+	Sudoku (FUILD - fltk game example)
+	New DOSBox & symbolic
+ 7. Revised desktop icon
+ 8. Revised GNOME App Folders Manager
+
+ =====================================================================
+
+ 25 May 2019 // v 0.4
+ --------------------
+
+ # Improving production environments compatibility and videogame ROMs supporting.
+
+ 1. Included bash script for automatic user installation
+ 2. Minor changes in index file
+ 3. Minor improvements in documentation
+ 4. Adjusted dark purple and dark orange colors
+ 5. App icons
+	Snes9x icon
+	PDF Arranger (& symbolic)
+ 6. Filetypes icons
+	Flatpakref
+	OTF fonts
+	JSON
+	CUE CD image
+	NES roms
+	SNES roms
+	Nintendo 64 roms
+	GameBoy roms
+	GameBoy Color roms
+	GameBoy Advance roms
+	Nintendo DS roms
+	Amiga roms
+	Atari 2600 roms
+	Atari 7800 roms
+	Atari Lynx roms
+	Dreamcast roms
+	Game Gear roms
+	Sega Master System roms
+	Sega Mega Drive / Genesis roms
+	Sega 32x roms
+	Neo Geo Pocket roms
+	Neo Geo Pocket Color roms
+	SG-1000 roms
+	TurboGrafx 16 / PC Engine roms
+	VirtualBoy roms
+	WonderSwan roms
+	WonderSwan Color roms
+	Famicom Disk System roms
+	Save files for videogames (.sav)
+	CDRDAO TOC (CD content table)
+	Adobe Illustrator document
+	Microsoft Access Database
+	Internet security certificate (pkix cert)
+	MOBI eBooks
+	Translation files (gettext, Qt linguist)
+	Translation template
+	Corrected 16px template files
+	Logfiles
+	Subtitles (.sub, .srt)
+	AppImage
+	Redesigned application x theme
+ 7. Deleted icons
+	system-software-update2
+	Places/desktop symbolic link
+ 8. Symbolic icons
+	Start here
+	Revised PDF Shuffler / PDF Arranger
+	Revised GPick 
+	Qt Linguist
+	Qt Designer
+	Qt QDbus Viewer
+	Lollypop
+	New Firefox
+	Document - open recent
+	WatchFlower
+ 9. Revised 16px folder, folder-remote and user-home
+ 10. 16px status image loading
+ 11. Extra testing colored folders (black, brown, green, grey, orange, red, violet, yellow)
+	* Be careful: assigned colored folder size don't change with the file manager zoom.
+	* Colored folders will not change automatically if icon theme changes.
+
+ =====================================================================
+
+ 16 Apr 2019 // v 0.3
+ --------------------
+
+ # Release focused on corrections, better visualization and production environments
+
+ 1. Adjusted color palette: green, yellow
+ 2. Symbolic icons
+	Revised symbolic folder
+	Revised CMake
+	VLC
+	VirtualBox
+	GParted
+	LibreOffice startcenter
+	LibreOffice Math
+	LibreOffice Writer
+	LibreOffice Impress
+	LibreOffice Draw
+	LibreOffice Base
+	Gnumeric
+	Abiword
+	Audacity
+	Blender
+	Binary mimetype
+	Revised Firefox
+	New system software install
+	Revised system software update
+ 3. Filetypes icons
+	New 16px EPUB
+	Revised 16px video
+	48px gtk file
+	Office Math/Formula
+	Office Database
+	Revised office Presentations
+	Revised office Sheets
+	Revised office Draw
+	Revised office Documents
+	Desktop file/link
+	Android APK
+	Flatpak & Snap packages
+	Flatpak repository
+	MSI (Windows Installer)
+	VCard available for common use
+	Partial download
+	Encrypted (PGP)
+	PGP Key
+	PGP Signature
+	C (header, source)
+	C++ (header, source)
+	QML
+	Vala
+	Backup / trash
+	Octet stream
+	SQLite databases
+	Markdown
+	Revised package repository
+	Corrected 48px text-generic-template
+	CMake 
+	Makefile
+	Copying / Copyright
+	MIDI
+	Microsoft Office compatibilities
+	Microsoft Publisher
+	Python bytecode
+	Tcl
+	Sharedlib
+ 4. Folder-drag-accept
+ 5. Revised DOSBox icon
+ 6. Dropped CMake icon
+ 7. Revised trash icon and trash full. 16px added
+ 8. Revised network server
+ 9. Revised network workgroup
+ 10. Revised desktop icon. Improved file performance
+ 11. New system software installer icon
+ 12. New software updater
+ 13. Revised devices (HDD, SSD)
+ 14. Ready for 48px and 16px app icons
+
+ =====================================================================
+
+ 19 Mar 2019 // v 0.2
+ --------------------
+
+ # Rebooting Boston Icons (outdated version: 0.1 -Nov 17, 2016-)
+ # Made from scratch again
+ # Most important things or changes:
+
+ 1. Addapted for GNOME 3.32. Change to 128px size
+ 2. Discarded unused things. New design principles. Revised color palette
+ 3. Updated data
+ 4. Revised symbolic icons
+ 5. Revised folder icons
+ 6. Various filetype icons (mimes). Revised / new designs
+ 7. Actions-document-open test icon
+ 8. HDD and SSD drives icons
+ 9. Icons & symbolics:
+	Xsensors
+	Hardinfo 
+	Spotify 
+	FLUID
+	CMake
+	GRUB Customizer 
+	DOSBox
+	PDF Shuffler
+	GNOME App Folders Manager
+ 10. "Image loading" status icon
+ 11. Gpick and Qt4L2 symbolic icons
+ 12. LMMS filetype and symbolic
+ 13. Calendar filetypes available for use
+ 14. Added various symbolic links for duplicated files
+ 15. Some 48px and 16px icons for small sizes and non symbolic use
