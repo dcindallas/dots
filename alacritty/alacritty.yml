@@ -58,26 +58,26 @@ save_to_clipboard: true
 
 font:
   normal:
-    family: "SF Mono"
+    family: "Office Code Pro D"
     style: Regular
 
   # Bold font face
   bold:
-    family: "SF Mono"
+    family: "Office Code Pro D"
     style: Bold
 
   # Italic font face
   italic:
-    family: "SF Mono"
+    family: "Office Code Pro D"
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: "SF Mono"
+    family: "Office Code Pro D"
     style: Bold Italic
 
   # Point size
-  size: 10
+  size: 9
 
 # Start flavours
 # Base16 dc-dark-leaf 256 - alacritty color config
@@ -116,7 +116,7 @@ colors:
     white:   '0xcacadc'
 
   indexed_colors:
-    - { index: 16, color: '0x767692' }
+    - { index: 16, color: '0x3f3a5d' }
     - { index: 17, color: '0x7351FE' }
     - { index: 18, color: '0x223249' }
     - { index: 19, color: '0x2A2A37' }

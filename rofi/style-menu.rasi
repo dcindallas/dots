@@ -23,7 +23,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Hack Nerd Font Mono 11";
+    font:                        "DejaVuSansMono Nerd Font Mono 10";
     background:                  @lightbg;
     background-alt:              @lightfg;
     foreground:                  @lightfg;
@@ -45,11 +45,11 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
-    border-radius:               3px;
+    border-radius:               1px;
     cursor:                      "default";
     background-color:            @lightbg;
     border-color:            	 @red;
-    border: 					 1px;
+    border: 					 0px;
 }
 
 /*****----- Main Box -----*****/

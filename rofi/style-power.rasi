@@ -25,7 +25,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "SF Mono:style=Medium 12";
+    font:                        "DejaVuSansMono Nerd Font Mono 10";
     background:                  @lightbg;
     background-alt:              @lightfg;
     foreground:                  @lightbg;
@@ -47,11 +47,11 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
-    border-radius:               3px;
+    border-radius:               1px;
     cursor:                      "default";
     background-color:            @background;
     border-color:            	 @red;
-    border: 					 1px;
+    border: 					 0px;
 
 }
 
