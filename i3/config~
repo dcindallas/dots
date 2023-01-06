@@ -29,7 +29,7 @@ for_window [class=TelegramDesktop] floating enable
 for_window [class=Lxappearance] floating enable
 for_window [class=arandr] floating enable
 for_window [class=feh] floating enable
-for_window [class=Evince] floating enable
+for_window [class=pithos] floating enable
 for_window [class=Zoom] floating enable
 for_window [class=File-roller] floating enable
 for_window [class=Gpick] floating enable
@@ -45,13 +45,15 @@ for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
+for_window [title="File Operation Progress"] floating enable
+
 # You can also use any non-zero value if you'd like to have a border
 for_window [class="^.*"] border pixel 1
 # Activate smart borders (always)
-smart_borders on
-hide_edge_borders both
-new_window pixel 0
-# border_radius 12
+#smart_borders on
+#hide_edge_borders both
+#new_window pixel 0
+#border_radius 12
 
 
 # START UP PROGRAMS ------------------------------------------------
@@ -63,16 +65,16 @@ exec --no-startup-id dex --autostart --environment i3
 # launch the bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 120 "" 'betterlockscreen -l' &
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 300 "" 'betterlockscreen -l' &
 
 for_window [class="Google-chrome-beta"] move container to workspace 2
 exec --no-startup-id google-chrome-beta
 
-for_window [class="thunderbird"] move container to workspace 4
-exec --no-startup-id thunderbird
+# for_window [class="thunderbird"] move container to workspace 4
+# exec --no-startup-id thunderbird
 
-for_window [class="Alacritty"] move container to workspace 1
-exec --no-startup-id alacritty -e btop
+# for_window [class="Alacritty"] move container to workspace 1
+# exec --no-startup-id alacritty -e btop
 
 # start the volume tray application
 # exec --no-startup-id volumeicon &
@@ -192,11 +194,12 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 
-#~# define what monitor workspace goes to
+#
+# define what monitor workspace goes to
 workspace 1 output eDP1
-workspace $ws1 gaps top 35
+workspace $ws1 gaps top 45
 workspace $ws1 gaps inner 5
-workspace $ws1 gaps outer 10
+workspace $ws1 gaps outer 15
 # workspace 1 output DP1
 workspace 2 output DP1
 workspace 3 output DP1
@@ -279,11 +282,11 @@ set $base0F #7351FE
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base00 $base00 $base05 $base00 $base00
-client.focused_inactive $base00 $base00 $base05 $base00 $base00
-client.unfocused        $base00 $base00 $base05 $base00 $base00
-client.urgent           $base08 $base08 $base05 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.focused          $base00 $base00 $base05 $base0C $base0C
+client.focused_inactive $base00 $base00 $base05 $base0C $base0C
+client.unfocused        $base00 $base00 $base05 $base0C $base0C
+client.urgent           $base0E $base0E $base05 $base0E $base0E
+client.placeholder      $base00 $base00 $base05 $base0C $base0C
 client.background       $base00
 # i3 Bar  -----------------------------------------------------------
 #                                                                   -

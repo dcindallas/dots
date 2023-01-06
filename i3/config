@@ -16,7 +16,7 @@ for_window [class=Xfce4-power-manager-settings] floating enable
 for_window [class=Arandr] floating enable
 for_window [class=System-config-printer] floating enable
 for_window [class=mediawriter] floating enable
-for_window [class=Headset] floating enable
+for_window [class=Pithos] floating enable
 for_window [class=Kitty] floating enable
 for_window [class=gnome-calculator] floating enable
 for_window [class=Msgcompose] floating enable
@@ -45,11 +45,13 @@ for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
+for_window [title="File Operation Progress"] floating enable
+
 # You can also use any non-zero value if you'd like to have a border
 for_window [class="^.*"] border pixel 1
 # Activate smart borders (always)
-#smart_borders on
-#hide_edge_borders both
+# smart_borders on
+hide_edge_borders both
 #new_window pixel 0
 #border_radius 12
 
@@ -63,19 +65,11 @@ exec --no-startup-id dex --autostart --environment i3
 # launch the bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 300 "" 'betterlockscreen -l' &
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 420 "" 'betterlockscreen -l' &
 
-for_window [class="Google-chrome-beta"] move container to workspace 2
+for_window [class="Google-chrome-beta"] move container to workspace 1
 exec --no-startup-id google-chrome-beta
 
-# for_window [class="thunderbird"] move container to workspace 4
-# exec --no-startup-id thunderbird
-
-# for_window [class="Alacritty"] move container to workspace 1
-# exec --no-startup-id alacritty -e btop
-
-# start the volume tray application
-# exec --no-startup-id volumeicon &
 
 # KEYBINDINGS -------------------------------------------------------
 #                                                                   -
@@ -94,9 +88,10 @@ bindsym $mod+Escape exec betterlockscreen -l
 floating_modifier $mod
 
 # set the gaps and adjust them when you want
+
 gaps inner 10
-gaps outer 15
-gaps top 45
+gaps outer 0
+gaps top 35
 bindsym $mod+z		gaps outer current plus 5
 bindsym $mod+Shift+z	gaps outer current minus 5
 
@@ -106,7 +101,7 @@ bindsym $mod+Shift+z	gaps outer current minus 5
 
 bindsym $mod+Return exec kitty
 
-bindsym F1 exec kitty --class=floating_term
+bindsym $mod+F1 exec kitty --class=floating_term
 for_window [class="floating_term"] floating enable 
 for_window [class="floating_term"] resize set 1200px 850px
 for_window [class="floating_term"] border pixel 0
@@ -119,6 +114,7 @@ bindsym F6 exec dunstctl history-pop
 bindsym F7 exec dmenu-bluetooth -theme /home/duane/.config/rofi/style-power.rasi
 bindsym F8 exec networkmanager_dmenu -theme /home/duane/.config/rofi/style-power.rasi
 bindsym $mod+a exec rofi -show drun -theme /home/duane/.config/rofi/style-menu.rasi
+bindsym $mod+x exec jgmenu_run
 
 # Hide or show (toggle) the poly-bar
 
@@ -127,14 +123,17 @@ bindsym $mod+a exec rofi -show drun -theme /home/duane/.config/rofi/style-menu.r
 # common apps keybinds screenshot etc
 bindsym Print exec maim --delay=5.0 ~/Pictures/screenshots/$(date +%s).png
 bindsym $alt+c exec gcolor3 &
-bindsym $alt+x exec google-chrome-beta &
-bindsym $alt+w exec librewolf &
+bindsym $alt+w exec google-chrome-beta &
+bindsym $alt+x exec librewolf &
 bindsym $alt+f exec thunar &
 bindsym $alt+g exec geany &
-bindsym $alt+s exec youtube-music &
+bindsym $alt+s exec spotify &
+bindsym $alt+m exec youtube-music &
 bindsym $alt+p exec pithos &
 bindsym $alt+t exec thunderbird &
 bindsym $alt+n exec gnome-calculator &
+bindsym $alt+F1 exec playerctl previous &
+bindsym $alt+F2 exec playerctl next &
 
 # kill focused window
 bindsym $mod+q kill
@@ -192,19 +191,16 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 
-#~# define what monitor workspace goes to
+#
+# define what monitor workspace goes to
 workspace 1 output eDP1
-workspace $ws1 gaps top 40
-workspace $ws1 gaps inner 5
-# workspace $ws1 gaps outer 15
-# workspace 1 output DP1
-workspace 2 output DP1
-workspace 3 output DP1
-workspace 4 output DP1
-workspace 5 output DP1
-workspace 6 output DP1
-workspace 7 output DP1
-workspace 8 output DP1
+workspace 2 output eDP1
+workspace 3 output eDP1
+workspace 4 output eDP1
+workspace 5 output eDP1
+workspace 6 output eDP1
+workspace 7 output eDP1
+workspace 8 output eDP1
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -260,16 +256,16 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #1F1F28
+set $base00 #1C1C26
 set $base01 #223249
-set $base02 #2A2A37
+set $base02 #404058
 set $base03 #878897
 set $base04 #a8a9b9
-set $base05 #eeeeee
-set $base06 #d1d1e1
+set $base05 #ffffff
+set $base06 #6159B5
 set $base07 #cacadc
-set $base08 #DAFD50
-set $base09 #3f3a5d
+set $base08 #FDDD4E
+set $base09 #453E8B
 set $base0A #FFA263
 set $base0B #7E8772
 set $base0C #C1B28E
@@ -279,11 +275,11 @@ set $base0F #7351FE
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base00 $base00 $base05 $base00 $base09
-client.focused_inactive $base00 $base00 $base05 $base00 $base09
-client.unfocused        $base00 $base00 $base05 $base00 $base09
-client.urgent           $base08 $base08 $base05 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base09
+client.focused          $base00 $base00 $base05 $base02 $base02
+client.focused_inactive $base00 $base00 $base05 $base02 $base02
+client.unfocused        $base00 $base00 $base05 $base02 $base02
+client.urgent           $base0E $base0E $base05 $base0E $base0E
+client.placeholder      $base00 $base00 $base05 $base02 $base02
 client.background       $base00
 # i3 Bar  -----------------------------------------------------------
 #                                                                   -

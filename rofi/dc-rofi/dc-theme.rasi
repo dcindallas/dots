@@ -8,12 +8,12 @@
 
 * {
     red:                         rgba ( 255, 162, 99, 100 % );
-    blue:                        rgba ( 238, 238, 238, 100 % );
+    blue:                        rgba ( 255, 255, 255, 100 % );
     lightfg:                     rgba ( 168, 169, 185, 100 % );
-    lightbg:                     rgba ( 31, 31, 40, 100 % );
-    foreground:                  rgba ( 238, 238, 238, 100 % );
-    background:                  rgba ( 31, 31, 40, 100 % );
-    background-color:            rgba ( 31, 31, 40, 0 % );
+    lightbg:                     rgba ( 28, 28, 38, 100 % );
+    foreground:                  rgba ( 255, 255, 255, 100 % );
+    background:                  rgba ( 28, 28, 38, 100 % );
+    background-color:            rgba ( 28, 28, 38, 0 % );
     separatorcolor:              @foreground;
     border-color:                @foreground;
     selected-normal-foreground:  @lightbg;

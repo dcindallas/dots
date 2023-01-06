@@ -88,7 +88,7 @@ text_icon_padding = 20
 
 # Defines width in pixels of frame around the notification window.
 # Set to 0 to disable.
-frame_width = 0
+frame_width = 1
 
 # Defines color of the frame around the notification window.
 
@@ -308,24 +308,24 @@ per_monitor_dpi = false
 #--------------------------------------------------------------------
 
 # Start Flavours
-frame_color = "#2A2A37"
-separator_color = "#eeeeee"
+frame_color = "#404058"
+separator_color = "#ffffff"
 highlight = "#FFA263"
 
 [base16_low]
     msg_urgency = low
-    background = "#2A2A37"
-    foreground = "#eeeeee"
+    background = "#1C1C26"
+    foreground = "#ffffff"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#2A2A37"
-    foreground = "#eeeeee"
+    background = "#1C1C26"
+    foreground = "#ffffff"
 
 [base16_critical]
     msg_urgency = critical
     background = "#CD3F45"
-    foreground = "#eeeeee"
+    foreground = "#ffffff"
 # End Flavours
 
 

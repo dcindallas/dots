@@ -12,7 +12,7 @@ padding:
         x: 40
         y: 40
 window:
-        opacity: 0.70
+        opacity: 0.40
 
 dynamic_padding: true
 
@@ -77,7 +77,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 9
+  size: 11
 
 # Start flavours
 # Base16 dc-dark-leaf 256 - alacritty color config
@@ -85,29 +85,29 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x1F1F28'
-    foreground: '0xeeeeee'
+    background: '0x1C1C26'
+    foreground: '0xffffff'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x1F1F28'
-    cursor: '0xeeeeee'
+    text: '0x1C1C26'
+    cursor: '0xffffff'
 
   # Normal colors
   normal:
-    black:   '0x1F1F28'
-    red:     '0xDAFD50'
+    black:   '0x1C1C26'
+    red:     '0xFDDD4E'
     green:   '0x7E8772'
     yellow:  '0xFFA263'
     blue:    '0x3083DC'
     magenta: '0xCD3F45'
     cyan:    '0xC1B28E'
-    white:   '0xeeeeee'
+    white:   '0xffffff'
 
   # Bright colors
   bright:
     black:   '0x878897'
-    red:     '0xDAFD50'
+    red:     '0xFDDD4E'
     green:   '0x7E8772'
     yellow:  '0xFFA263'
     blue:    '0x3083DC'
@@ -116,10 +116,10 @@ colors:
     white:   '0xcacadc'
 
   indexed_colors:
-    - { index: 16, color: '0x3f3a5d' }
+    - { index: 16, color: '0x453E8B' }
     - { index: 17, color: '0x7351FE' }
     - { index: 18, color: '0x223249' }
-    - { index: 19, color: '0x2A2A37' }
+    - { index: 19, color: '0x404058' }
     - { index: 20, color: '0xa8a9b9' }
-    - { index: 21, color: '0xd1d1e1' }
+    - { index: 21, color: '0x6159B5' }
 # End flavours

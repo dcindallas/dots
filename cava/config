@@ -94,27 +94,28 @@ channels = mono
 gradient = 1
 
 
-gradient_color_1 = '#ffa263'
-gradient_color_2 = '#ffaf61'
-gradient_color_3 = '#ffbc5f'
-gradient_color_4 = '#ffbc5f'
-gradient_color_5 = '#fed75a'
-gradient_color_6 = '#fee558'
-gradient_color_7 = '#fef356'
-gradient_color_8 = '#f9fd54'
-gradient_color_9 = '#eafd52'
-gradient_color_10 = '#dafd50'
+gradient_color_1 = '#3b3c59'
+gradient_color_2 = '#4b4464'
+gradient_color_3 = '#4b4464'
+gradient_color_4 = '#6d5276'
+gradient_color_5 = '#7f597e'
+gradient_color_6 = '#926184'
+gradient_color_7 = '#a4688a'
+gradient_color_8 = '#b6708e'
+gradient_color_9 = '#c87990'
+gradient_color_10 = '#d98292'
 
-#dafd50
-#eafd52
-#f9fd54
-#fef356
-#fee558
-#fed75a
-#ffbc5f
-#ffbc5f
-#ffaf61
-#ffa263
+
+#3b3c59
+#4b4464
+#4b4464
+#6d5276
+#7f597e
+#926184
+#a4688a
+#b6708e
+#c87990
+#d98292
 
 
 [smoothing]

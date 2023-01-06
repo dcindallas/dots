@@ -3,9 +3,9 @@ import parser
 import openweather
 from util import get_city
 
-# Get your API KEY here https://openweathermap.org/api,
+# Get your API KEY here https://openweathermap.org/api, DOWNLOAD PYTHON REQUESTS
 # and set an environment variable for OPENWEATHER_API_KEY with your API KEY.
-OPENWEATHER_API_KEY = "xxxx get your own key xxxxx"
+OPENWEATHER_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 API_KEY = os.environ.get("OPENWEATHER_API_KEY", OPENWEATHER_API_KEY)
 
 
