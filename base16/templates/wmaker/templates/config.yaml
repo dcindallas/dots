@@ -1,3 +1,0 @@
-default:
-        extension: .style
-        output: colors
