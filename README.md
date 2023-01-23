@@ -8,4 +8,4 @@ Colors thanks to flavours https://github.com/misterio77/flavours this is a great
 
 Highly reccomend using Flatcolor GTK https://github.com/base16-project/base16-gtk-flatcolor check it out it links to Flavours and creates your own GTK theme, although it won't do GTK4 I gotta figure that one out because it's annoying.
 
-![just-a-ss](https://user-images.githubusercontent.com/67523002/211038129-1496134f-f8fa-46f7-91f4-d694cf8e5d70.png)
+![1674434721](https://user-images.githubusercontent.com/67523002/214012636-74053035-a5b7-44de-8305-a827f1c58c41.png)
